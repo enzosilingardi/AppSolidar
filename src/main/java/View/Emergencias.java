@@ -36,7 +36,7 @@ public class Emergencias extends JFrame {
 	 */
 	public Emergencias() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 414, 228);
+		setBounds(100, 100, 452, 267);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -44,7 +44,7 @@ public class Emergencias extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 400, 191);
+		panel.setBounds(0, 0, 436, 228);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -76,5 +76,9 @@ public class Emergencias extends JFrame {
 		});
 		btnAvisoConflicto.setBounds(115, 52, 176, 30);
 		panel.add(btnAvisoConflicto);
+		
+		JButton btnVolver = new JButton("Volver");
+		btnVolver.setBounds(337, 194, 89, 23);
+		panel.add(btnVolver);
 	}
 }
