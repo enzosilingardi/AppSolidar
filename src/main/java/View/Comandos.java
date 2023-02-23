@@ -8,6 +8,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Comandos extends JFrame {
 
@@ -68,6 +70,13 @@ public class Comandos extends JFrame {
 		panel.add(btnRespuestas);
 		
 		JButton btnVolver = new JButton("Volver");
+		btnVolver.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Main main = new Main();
+				main.setVisible(true);
+				dispose();
+			}
+		});
 		btnVolver.setBounds(337, 229, 89, 23);
 		panel.add(btnVolver);
 	}

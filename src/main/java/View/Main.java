@@ -47,18 +47,35 @@ public class Main extends JFrame {
 		panel.setLayout(null);
 		
 		JButton btnConfiguracion = new JButton("Configuración");
+		btnConfiguracion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Configuracion con = new Configuracion();
+				con.setVisible(true);
+				dispose();
+			}
+		});
 		btnConfiguracion.setBounds(135, 50, 140, 30);
 		panel.add(btnConfiguracion);
 		
 		JButton btnEmergencias = new JButton("Emergencias");
 		btnEmergencias.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Emergencias em = new Emergencias();
+				em.setVisible(true);
+				dispose();
 			}
 		});
 		btnEmergencias.setBounds(135, 90, 140, 30);
 		panel.add(btnEmergencias);
 		
 		JButton btnComandos = new JButton("Comandos");
+		btnComandos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Comandos com = new Comandos();
+				com.setVisible(true);
+				dispose();
+			}
+		});
 		btnComandos.setBounds(135, 10, 140, 30);
 		panel.add(btnComandos);
 		

@@ -78,6 +78,13 @@ public class Emergencias extends JFrame {
 		panel.add(btnAvisoConflicto);
 		
 		JButton btnVolver = new JButton("Volver");
+		btnVolver.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Main main = new Main();
+				main.setVisible(true);
+				dispose();
+			}
+		});
 		btnVolver.setBounds(337, 194, 89, 23);
 		panel.add(btnVolver);
 	}
