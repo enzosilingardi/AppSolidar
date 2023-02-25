@@ -359,7 +359,7 @@ public class Main extends JFrame {
 		        VoiceManager voiceManager = VoiceManager.getInstance();
 		        voice = voiceManager.getVoice("kevin16");
 		        voice.allocate();
-		        voice.speak("kee-see-eh-rah sah-leer ah koh-mehr");
+		        voice.speak("kee-see-eh-rah sah-ah-lee-eer ah koh-mehr");
 		        voice.deallocate();
 			}
 		});
