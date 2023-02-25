@@ -175,7 +175,7 @@ public class Main extends JFrame {
 		panel_5.setLayout(null);
 		
 		JButton btnEmergencias = new JButton("Emergencias");
-		btnEmergencias.setBounds(126, 8, 125, 27);
+		btnEmergencias.setBounds(118, 8, 140, 30);
 		panel_5.add(btnEmergencias);
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		
@@ -368,7 +368,7 @@ public class Main extends JFrame {
 		panel_4.setLayout(null);
 		
 		JButton btnConfiguracion = new JButton("Configuración");
-		btnConfiguracion.setBounds(122, 8, 133, 27);
+		btnConfiguracion.setBounds(118, 8, 140, 30);
 		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		panel_4.add(btnConfiguracion);
 		
