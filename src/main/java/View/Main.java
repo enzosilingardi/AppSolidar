@@ -113,7 +113,7 @@ public class Main extends JFrame {
 		        VoiceManager voiceManager = VoiceManager.getInstance();
 		        voice = voiceManager.getVoice("kevin16");
 		        voice.allocate();
-		        voice.speak("kee-eh-roh lah-bahr-meh lohs dee-ehn-tehs");
+		        voice.speak("kee-eh-roh lah-bah-ahr-meh lohs dee-ehn-tehs");
 		        voice.deallocate();
 			}
 		});
