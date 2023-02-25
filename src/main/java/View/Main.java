@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -213,7 +214,7 @@ public class Main extends JFrame {
 		        VoiceManager voiceManager = VoiceManager.getInstance();
 		        voice = voiceManager.getVoice("kevin16");
 		        voice.allocate();
-		        voice.speak("kee-see-eh-rah behr ehn lah teh-leh");
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah teh-leh");
 		        voice.deallocate();
 
 			}
@@ -230,7 +231,7 @@ public class Main extends JFrame {
 		        VoiceManager voiceManager = VoiceManager.getInstance();
 		        voice = voiceManager.getVoice("kevin16");
 		        voice.allocate();
-		        voice.speak("kee-see-eh-rah behr ehn lah kohm-poo-tah-doh-rah");
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah kohm-poo-tah-doh-rah");
 		        voice.deallocate();
 
 			}
@@ -247,7 +248,7 @@ public class Main extends JFrame {
 		        VoiceManager voiceManager = VoiceManager.getInstance();
 		        voice = voiceManager.getVoice("kevin16");
 		        voice.allocate();
-		        voice.speak("kee-see-eh-rah behr ehn lah tahb-liht");
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah tahb-liht");
 		        voice.deallocate();
 			}
 		});
@@ -367,10 +368,21 @@ public class Main extends JFrame {
 		btnSalirAComer.setBounds(514, 95, 240, 30);
 		panel_7.add(btnSalirAComer);
 		
-		JButton btnNewButton_9_2 = new JButton("???");
-		btnNewButton_9_2.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnNewButton_9_2.setBounds(514, 131, 240, 30);
-		panel_7.add(btnNewButton_9_2);
+		JButton btnJugar = new JButton("Quisiera jugar a algo");
+		btnJugar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah hoo-gah-ahr ah ahl-goh");
+		        voice.deallocate();
+			}
+		});
+		btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+		btnJugar.setBounds(514, 131, 240, 30);
+		panel_7.add(btnJugar);
 		
 		JPanel panel_8 = new JPanel();
 		panel_8.setBounds(387, 508, 10, 44);
@@ -534,6 +546,22 @@ public class Main extends JFrame {
 		panel_10_1.setBounds(520, 47, 256, 144);
 		contentPane.add(panel_10_1);
 		panel_10_1.setLayout(null);
+		
+		JButton btnNewButton = new JButton("Teclado en pantalla");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		        try {
+		        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");
+		        } catch (IOException e1) {
+		            e1.printStackTrace();
+		        }
+
+
+			}
+		});
+		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnNewButton.setBounds(40, 11, 176, 25);
+		panel_10_1.add(btnNewButton);
 		btnConfiguracion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Configuracion con = new Configuracion();
