@@ -172,8 +172,10 @@ public class Main extends JFrame {
 		JPanel panel_5 = new JPanel();
 		panel_5.setBounds(398, 508, 378, 44);
 		contentPane.add(panel_5);
+		panel_5.setLayout(null);
 		
 		JButton btnEmergencias = new JButton("Emergencias");
+		btnEmergencias.setBounds(126, 8, 125, 27);
 		panel_5.add(btnEmergencias);
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		
@@ -200,7 +202,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnPaseo.setBounds(10, 22, 240, 30);
+		btnPaseo.setBounds(14, 23, 240, 30);
 		panel_7.add(btnPaseo);
 		
 		JButton btnTele = new JButton("Quisiera Ver en la Tele...");
@@ -217,7 +219,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnTele.setBounds(10, 58, 240, 30);
+		btnTele.setBounds(14, 59, 240, 30);
 		panel_7.add(btnTele);
 		
 		JButton btnComputadora = new JButton("Quisiera Ver en la Computadora...");
@@ -234,7 +236,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnComputadora.setBounds(10, 94, 240, 30);
+		btnComputadora.setBounds(14, 95, 240, 30);
 		panel_7.add(btnComputadora);
 		
 		JButton btnTablet = new JButton("Quisiera Ver en la Tablet...");
@@ -250,7 +252,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnTablet.setBounds(10, 130, 240, 30);
+		btnTablet.setBounds(14, 131, 240, 30);
 		panel_7.add(btnTablet);
 		
 		JButton btnRadio = new JButton("Quisiera Escuchar Radio");
@@ -266,7 +268,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnRadio.setBounds(260, 22, 240, 30);
+		btnRadio.setBounds(264, 23, 240, 30);
 		panel_7.add(btnRadio);
 		
 		JButton btnMusica = new JButton("Quisiera Escuchar Música");
@@ -282,7 +284,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnMusica.setBounds(260, 58, 240, 30);
+		btnMusica.setBounds(264, 59, 240, 30);
 		panel_7.add(btnMusica);
 		
 		JButton btnAudiolibro = new JButton("Quisiera Escuchar un Audiolibro");
@@ -298,10 +300,10 @@ public class Main extends JFrame {
 			}
 		});
 		btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnAudiolibro.setBounds(260, 94, 240, 30);
+		btnAudiolibro.setBounds(264, 95, 240, 30);
 		panel_7.add(btnAudiolibro);
 		
-		JButton btnLibro = new JButton("Quisiera que Me Lean un Libro");
+		JButton btnLibro = new JButton("Quisiera que me Lean un Libro");
 		btnLibro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -314,7 +316,7 @@ public class Main extends JFrame {
 			}
 		});
 		btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnLibro.setBounds(260, 130, 240, 30);
+		btnLibro.setBounds(264, 131, 240, 30);
 		panel_7.add(btnLibro);
 		
 		JButton btnRopa = new JButton("Quisiera Cambiarme de Ropa");
@@ -330,22 +332,22 @@ public class Main extends JFrame {
 			}
 		});
 		btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnRopa.setBounds(510, 22, 240, 30);
+		btnRopa.setBounds(514, 23, 240, 30);
 		panel_7.add(btnRopa);
 		
-		JButton btnNewButton_1_2_2 = new JButton("Tengo Sed");
+		JButton btnNewButton_1_2_2 = new JButton("Quisiera ir al Cine");
 		btnNewButton_1_2_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton_1_2_2.setBounds(510, 58, 240, 30);
+		btnNewButton_1_2_2.setBounds(514, 59, 240, 30);
 		panel_7.add(btnNewButton_1_2_2);
 		
-		JButton btnNewButton_2_2_2 = new JButton("Tengo Sueño");
+		JButton btnNewButton_2_2_2 = new JButton("Quisiera Salir a Comer");
 		btnNewButton_2_2_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton_2_2_2.setBounds(510, 94, 240, 30);
+		btnNewButton_2_2_2.setBounds(514, 95, 240, 30);
 		panel_7.add(btnNewButton_2_2_2);
 		
-		JButton btnNewButton_9_2 = new JButton("New button");
+		JButton btnNewButton_9_2 = new JButton("???");
 		btnNewButton_9_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton_9_2.setBounds(510, 130, 240, 30);
+		btnNewButton_9_2.setBounds(514, 131, 240, 30);
 		panel_7.add(btnNewButton_9_2);
 		
 		JPanel panel_8 = new JPanel();
@@ -363,8 +365,10 @@ public class Main extends JFrame {
 		JPanel panel_4 = new JPanel();
 		panel_4.setBounds(10, 508, 378, 44);
 		contentPane.add(panel_4);
+		panel_4.setLayout(null);
 		
 		JButton btnConfiguracion = new JButton("Configuración");
+		btnConfiguracion.setBounds(122, 8, 133, 27);
 		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		panel_4.add(btnConfiguracion);
 		
@@ -461,6 +465,31 @@ public class Main extends JFrame {
 		btnGracias.setBounds(409, 30, 89, 70);
 		panel_9.add(btnGracias);
 		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		
+		JPanel panel_10 = new JPanel();
+		panel_10.setBounds(520, 202, 256, 112);
+		contentPane.add(panel_10);
+		panel_10.setLayout(null);
+		
+		JLabel lblTemperatura = new JLabel("Temperatura");
+		lblTemperatura.setFont(new Font("Roboto Medium", Font.BOLD, 16));
+		lblTemperatura.setBounds(10, 0, 153, 19);
+		panel_10.add(lblTemperatura);
+		
+		JButton btnTengoFrio = new JButton("Tengo Frio");
+		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnTengoFrio.setBounds(10, 30, 113, 70);
+		panel_10.add(btnTengoFrio);
+		
+		JButton btnTengoCalor = new JButton("Tengo Calor");
+		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnTengoCalor.setBounds(133, 30, 113, 70);
+		panel_10.add(btnTengoCalor);
+		
+		JPanel panel_10_1 = new JPanel();
+		panel_10_1.setBounds(520, 47, 256, 144);
+		contentPane.add(panel_10_1);
+		panel_10_1.setLayout(null);
 		btnConfiguracion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Configuracion con = new Configuracion();
