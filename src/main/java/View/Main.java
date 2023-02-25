@@ -335,15 +335,37 @@ public class Main extends JFrame {
 		btnRopa.setBounds(514, 23, 240, 30);
 		panel_7.add(btnRopa);
 		
-		JButton btnNewButton_1_2_2 = new JButton("Quisiera ir al Cine");
-		btnNewButton_1_2_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton_1_2_2.setBounds(514, 59, 240, 30);
-		panel_7.add(btnNewButton_1_2_2);
+		JButton btnCine = new JButton("Quisiera ir al Cine");
+		btnCine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah eer ahl see-neh");
+		        voice.deallocate();
+			}
+		});
+		btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnCine.setBounds(514, 59, 240, 30);
+		panel_7.add(btnCine);
 		
-		JButton btnNewButton_2_2_2 = new JButton("Quisiera Salir a Comer");
-		btnNewButton_2_2_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton_2_2_2.setBounds(514, 95, 240, 30);
-		panel_7.add(btnNewButton_2_2_2);
+		JButton btnSalirAComer = new JButton("Quisiera Salir a Comer");
+		btnSalirAComer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah sah-leer ah koh-mehr");
+		        voice.deallocate();
+			}
+		});
+		btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnSalirAComer.setBounds(514, 95, 240, 30);
+		panel_7.add(btnSalirAComer);
 		
 		JButton btnNewButton_9_2 = new JButton("???");
 		btnNewButton_9_2.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
@@ -477,11 +499,33 @@ public class Main extends JFrame {
 		panel_10.add(lblTemperatura);
 		
 		JButton btnTengoFrio = new JButton("Tengo Frio");
+		btnTengoFrio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh free-oh");
+		        voice.deallocate();
+			}
+		});
 		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnTengoFrio.setBounds(10, 30, 113, 70);
 		panel_10.add(btnTengoFrio);
 		
 		JButton btnTengoCalor = new JButton("Tengo Calor");
+		btnTengoCalor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh kah-lohr");
+		        voice.deallocate();
+			}
+		});
 		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnTengoCalor.setBounds(133, 30, 113, 70);
 		panel_10.add(btnTengoCalor);
