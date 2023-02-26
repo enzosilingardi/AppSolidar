@@ -543,11 +543,33 @@ public class Main extends JFrame {
 		panel_10.add(btnTengoCalor);
 		
 		JButton btnEstaFrio = new JButton("Esta frio");
+		btnEstaFrio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("ehs-tah-ah free-oh");
+		        voice.deallocate();
+			}
+		});
 		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnEstaFrio.setBounds(10, 109, 113, 70);
 		panel_10.add(btnEstaFrio);
 		
 		JButton btnEstaCaliente = new JButton("Esta caliente");
+		btnEstaCaliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("ehs-tah-ah kah-lee-ehn-teh");
+		        voice.deallocate();
+			}
+		});
 		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnEstaCaliente.setBounds(133, 109, 113, 70);
 		panel_10.add(btnEstaCaliente);
