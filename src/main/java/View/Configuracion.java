@@ -15,6 +15,7 @@ import javax.swing.SwingConstants;
 public class Configuracion extends JFrame {
 
 	private JPanel contentPane;
+	JLabel lblIdiomaSeleccionado;
 
 	/**
 	 * Launch the application.
@@ -32,6 +33,8 @@ public class Configuracion extends JFrame {
 		});
 	}
 
+	String idioma = "esp";
+	String tamanio = "1";
 	/**
 	 * Create the frame.
 	 */
@@ -100,6 +103,7 @@ public class Configuracion extends JFrame {
 		panel_3.add(btnTamanio1);
 		btnTamanio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tamanio = "1";
 			}
 		});
 		btnTamanio1.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -109,6 +113,7 @@ public class Configuracion extends JFrame {
 		panel_3.add(btnTamanio2);
 		btnTamanio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tamanio = "2";
 			}
 		});
 		btnTamanio2.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -118,6 +123,7 @@ public class Configuracion extends JFrame {
 		panel_3.add(btnTamanio3);
 		btnTamanio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tamanio = "3";
 			}
 		});
 		btnTamanio3.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -138,24 +144,42 @@ public class Configuracion extends JFrame {
 		panel_3_1.add(lblIdioma);
 		
 		JButton btnEspaniol = new JButton("Español");
+		btnEspaniol.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				idioma = "esp";
+				lblIdiomaSeleccionado.setText("Seleccionado: Español");
+			}
+		});
 		btnEspaniol.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		btnEspaniol.setBounds(90, 25, 150, 40);
 		panel_3_1.add(btnEspaniol);
 		
 		JButton btnIngles = new JButton("Ingles");
+		btnIngles.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				idioma = "ing";
+				lblIdiomaSeleccionado.setText("Seleccionado: Inglés");
+			}
+		});
 		btnIngles.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		btnIngles.setBounds(250, 25, 150, 40);
 		panel_3_1.add(btnIngles);
+		
+		 lblIdiomaSeleccionado = new JLabel("Seleccionado: Español");
+		lblIdiomaSeleccionado.setBounds(433, 41, 139, 14);
+		panel_3_1.add(lblIdiomaSeleccionado);
 		
 		JPanel panel_1_1_1_1_1 = new JPanel();
 		panel_1_1_1_1_1.setBounds(10, 250, 606, 10);
 		panel.add(panel_1_1_1_1_1);
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Main main = new Main();
+				Main main = new Main(idioma);
 				main.setVisible(true);
 				dispose();
 			}
 		});
+		
+		
 	}
 }
