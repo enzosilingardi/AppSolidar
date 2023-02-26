@@ -166,7 +166,8 @@ public class Configuracion extends JFrame {
 		panel_3_1.add(btnIngles);
 		
 		 lblIdiomaSeleccionado = new JLabel("Seleccionado: Español");
-		lblIdiomaSeleccionado.setBounds(433, 41, 139, 14);
+		 lblIdiomaSeleccionado.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		lblIdiomaSeleccionado.setBounds(410, 39, 186, 17);
 		panel_3_1.add(lblIdiomaSeleccionado);
 		
 		JPanel panel_1_1_1_1_1 = new JPanel();
