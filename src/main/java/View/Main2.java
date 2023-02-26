@@ -16,7 +16,7 @@ import javax.swing.SwingConstants;
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
-public class Main extends JFrame {
+public class Main2 extends JFrame {
 
 	private JPanel contentPane;
 
@@ -27,7 +27,7 @@ public class Main extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main frame = new Main();
+					Main2 frame = new Main2();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,9 +39,9 @@ public class Main extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Main() {
+	public Main2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 600);
+		setBounds(100, 100, 1280, 960);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -49,83 +49,79 @@ public class Main extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel1 = new JPanel();
-		panel1.setBounds(0, 0, 520, 47);
+		panel1.setBounds(0, 0, 832, 134);
 		contentPane.add(panel1);
 		
 		JPanel panel2 = new JPanel();
-		panel2.setBounds(520, 0, 266, 73);
+		panel2.setBounds(832, 0, 432, 174);
 		contentPane.add(panel2);
 		
 		JPanel panel3 = new JPanel();
-		panel3.setBounds(10, 47, 510, 144);
+		panel3.setBounds(20, 134, 812, 224);
 		contentPane.add(panel3);
 		panel3.setLayout(null);
 		
 		JPanel panel4 = new JPanel();
-		panel4.setBounds(520, 73, 256, 42);
+		panel4.setBounds(832, 174, 412, 70);
 		contentPane.add(panel4);
 		panel4.setLayout(null);
 		
 		JPanel panel5 = new JPanel();
-		panel5.setBounds(10, 192, 510, 10);
+		panel5.setBounds(20, 358, 812, 20);
 		contentPane.add(panel5);
 		
 		JPanel panel6 = new JPanel();
-		panel6.setBounds(520, 115, 256, 10);
+		panel6.setBounds(832, 244, 412, 20);
 		contentPane.add(panel6);
 		
 		JPanel panel7 = new JPanel();
-		panel7.setBounds(10, 202, 510, 112);
+		panel7.setBounds(20, 378, 812, 154);
 		contentPane.add(panel7);
 		panel7.setLayout(null);
 		
 		JPanel panel8 = new JPanel();
-		panel8.setBounds(520, 124, 256, 190);
+		panel8.setBounds(832, 264, 412, 268);
 		contentPane.add(panel8);
 		panel8.setLayout(null);
 		
 		JPanel panel9 = new JPanel();
-		panel9.setBounds(10, 314, 766, 10);
+		panel9.setBounds(20, 532, 1224, 20);
 		contentPane.add(panel9);
 		
 		JPanel panel10 = new JPanel();
-		panel10.setBounds(10, 325, 766, 172);
+		panel10.setBounds(20, 552, 1224, 265);
 		contentPane.add(panel10);
 		panel10.setLayout(null);
 		
 		JPanel panel11 = new JPanel();
-		panel11.setBounds(10, 498, 766, 10);
+		panel11.setBounds(20, 817, 1224, 20);
 		contentPane.add(panel11);
 
 		JPanel panel12 = new JPanel();
-		panel12.setBounds(10, 508, 378, 44);
+		panel12.setBounds(20, 837, 602, 64);
 		contentPane.add(panel12);
 		panel12.setLayout(null);
 
 		JPanel panel13 = new JPanel();
-		panel13.setBounds(387, 508, 10, 44);
+		panel13.setBounds(622, 837, 20, 64);
 		contentPane.add(panel13);
 		
 		JPanel panel14 = new JPanel();
-		panel14.setBounds(398, 508, 378, 44);
+		panel14.setBounds(642, 837, 602, 64);
 		contentPane.add(panel14);
 		panel14.setLayout(null);
 		
 		JPanel panel15 = new JPanel();
-		panel15.setBounds(0, 47, 10, 516);
+		panel15.setBounds(0, 134, 20, 787);
 		contentPane.add(panel15);
 		
-		JPanel panel16 = new JPanel();
-		panel16.setBounds(776, 73, 10, 490);
-		contentPane.add(panel16);
-		
 		JPanel panel17 = new JPanel();
-		panel17.setBounds(10, 553, 766, 10);
+		panel17.setBounds(20, 901, 1224, 20);
 		contentPane.add(panel17);
 		
 		JLabel lblDialogosHabituales = new JLabel("Dialogos Habituales");
-		lblDialogosHabituales.setFont(new Font("Roboto Medium", Font.BOLD, 16));
-		lblDialogosHabituales.setBounds(10, 0, 160, 24);
+		lblDialogosHabituales.setFont(new Font("Roboto Medium", Font.BOLD, 22));
+		lblDialogosHabituales.setBounds(30, 0, 230, 30);
 		panel3.add(lblDialogosHabituales);
 		
 		JButton btnHambre = new JButton("Tengo hambre");
@@ -140,8 +136,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnHambre.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnHambre.setBounds(10, 32, 240, 30);
+		btnHambre.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnHambre.setBounds(30, 30, 361, 50);
 		panel3.add(btnHambre);
 		
 		JButton btnSed = new JButton("Tengo sed");
@@ -156,8 +152,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnSed.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnSed.setBounds(10, 68, 240, 30);
+		btnSed.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnSed.setBounds(30, 90, 361, 50);
 		panel3.add(btnSed);
 		
 		JButton btnSuenio = new JButton("Tengo sueño");
@@ -172,8 +168,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnSuenio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnSuenio.setBounds(10, 104, 240, 30);
+		btnSuenio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnSuenio.setBounds(30, 150, 361, 50);
 		panel3.add(btnSuenio);
 		
 		JButton btnDientes = new JButton("Quiero lavarme los dientes");
@@ -188,8 +184,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnDientes.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnDientes.setBounds(260, 32, 240, 30);
+		btnDientes.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnDientes.setBounds(421, 30, 361, 50);
 		panel3.add(btnDientes);
 		
 		JButton btnBanio = new JButton("Quiero ir al baño");
@@ -204,8 +200,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnBanio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnBanio.setBounds(260, 68, 240, 30);
+		btnBanio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnBanio.setBounds(421, 90, 361, 50);
 		panel3.add(btnBanio);
 		
 		JButton btnBaniar = new JButton("Quiero bañarme");
@@ -220,18 +216,18 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnBaniar.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnBaniar.setBounds(260, 104, 240, 30);
+		btnBaniar.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnBaniar.setBounds(421, 150, 361, 50);
 		panel3.add(btnBaniar);
 		
 		JButton btnEmergencias = new JButton("Emergencias");
-		btnEmergencias.setBounds(118, 8, 140, 30);
+		btnEmergencias.setBounds(131, 12, 340, 40);
 		panel14.add(btnEmergencias);
-		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
+		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
 		JLabel lblOcio = new JLabel("Ocio");
-		lblOcio.setBounds(10, 0, 130, 24);
-		lblOcio.setFont(new Font("Roboto Medium", Font.BOLD, 16));
+		lblOcio.setBounds(30, 0, 150, 30);
+		lblOcio.setFont(new Font("Roboto Medium", Font.BOLD, 22));
 		panel10.add(lblOcio);
 		
 		JButton btnPaseo = new JButton("Quisiera dar un paseo");
@@ -246,8 +242,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnPaseo.setBounds(14, 23, 240, 30);
+		btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnPaseo.setBounds(30, 30, 370, 45);
 		panel10.add(btnPaseo);
 		
 		JButton btnTele = new JButton("Quisiera ver algo en la tele");
@@ -263,8 +259,8 @@ public class Main extends JFrame {
 
 			}
 		});
-		btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnTele.setBounds(14, 59, 240, 30);
+		btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnTele.setBounds(30, 85, 370, 45);
 		panel10.add(btnTele);
 		
 		JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");
@@ -280,8 +276,8 @@ public class Main extends JFrame {
 
 			}
 		});
-		btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnComputadora.setBounds(14, 95, 240, 30);
+		btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnComputadora.setBounds(30, 140, 370, 45);
 		panel10.add(btnComputadora);
 		
 		JButton btnTablet = new JButton("Quisiera ver algo en la tablet");
@@ -296,8 +292,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnTablet.setBounds(14, 131, 240, 30);
+		btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnTablet.setBounds(30, 195, 370, 45);
 		panel10.add(btnTablet);
 		
 		JButton btnRadio = new JButton("Quisiera escuchar radio");
@@ -312,8 +308,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnRadio.setBounds(264, 23, 240, 30);
+		btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnRadio.setBounds(427, 30, 370, 45);
 		panel10.add(btnRadio);
 		
 		JButton btnMusica = new JButton("Quisiera escuchar música");
@@ -328,8 +324,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnMusica.setBounds(264, 59, 240, 30);
+		btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnMusica.setBounds(427, 85, 370, 45);
 		panel10.add(btnMusica);
 		
 		JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");
@@ -344,8 +340,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnAudiolibro.setBounds(264, 95, 240, 30);
+		btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnAudiolibro.setBounds(427, 140, 370, 45);
 		panel10.add(btnAudiolibro);
 		
 		JButton btnLibro = new JButton("Quisiera que me lean un libro");
@@ -360,8 +356,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnLibro.setBounds(264, 131, 240, 30);
+		btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnLibro.setBounds(427, 195, 370, 45);
 		panel10.add(btnLibro);
 		
 		JButton btnRopa = new JButton("Quisiera cambiarme de ropa");
@@ -376,8 +372,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnRopa.setBounds(514, 23, 240, 30);
+		btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnRopa.setBounds(824, 30, 370, 45);
 		panel10.add(btnRopa);
 		
 		JButton btnCine = new JButton("Quisiera ir al cine");
@@ -392,8 +388,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnCine.setBounds(514, 59, 240, 30);
+		btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnCine.setBounds(824, 86, 370, 45);
 		panel10.add(btnCine);
 		
 		JButton btnSalirAComer = new JButton("Quisiera salir a comer");
@@ -408,8 +404,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnSalirAComer.setBounds(514, 95, 240, 30);
+		btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnSalirAComer.setBounds(824, 140, 370, 45);
 		panel10.add(btnSalirAComer);
 		
 		JButton btnJugar = new JButton("Quisiera jugar a algo");
@@ -424,18 +420,18 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
-		btnJugar.setBounds(514, 131, 240, 30);
+		btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnJugar.setBounds(824, 195, 370, 45);
 		panel10.add(btnJugar);
 		
 		JButton btnConfiguracion = new JButton("Configuración");
-		btnConfiguracion.setBounds(118, 8, 140, 30);
-		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
+		btnConfiguracion.setBounds(131, 12, 340, 40);
+		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		panel12.add(btnConfiguracion);
 			
 		JLabel lblRespuestas = new JLabel("Respuestas");
-		lblRespuestas.setBounds(10, 0, 153, 19);
-		lblRespuestas.setFont(new Font("Roboto Medium", Font.BOLD, 16));
+		lblRespuestas.setBounds(30, 0, 153, 30);
+		lblRespuestas.setFont(new Font("Roboto Medium", Font.BOLD, 22));
 		panel7.add(lblRespuestas);
 		
 		JButton btnSi = new JButton("Si");
@@ -450,8 +446,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnSi.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnSi.setBounds(13, 30, 89, 70);
+		btnSi.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnSi.setBounds(41, 30, 130, 94);
 		panel7.add(btnSi);
 		
 		JButton btnNo = new JButton("No");
@@ -466,8 +462,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnNo.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNo.setBounds(112, 30, 89, 70);
+		btnNo.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnNo.setBounds(191, 30, 130, 94);
 		panel7.add(btnNo);
 		
 		JButton btnNoSe = new JButton("No se");
@@ -482,8 +478,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnNoSe.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNoSe.setBounds(211, 30, 89, 70);
+		btnNoSe.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnNoSe.setBounds(341, 30, 130, 94);
 		panel7.add(btnNoSe);
 		
 		JButton btnTalVez = new JButton("Tal vez");
@@ -498,8 +494,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnTalVez.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnTalVez.setBounds(310, 30, 89, 70);
+		btnTalVez.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnTalVez.setBounds(491, 30, 130, 94);
 		panel7.add(btnTalVez);
 		
 		JButton btnGracias = new JButton("Gracias!");
@@ -514,13 +510,13 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnGracias.setBounds(409, 30, 89, 70);
+		btnGracias.setBounds(641, 30, 130, 94);
 		panel7.add(btnGracias);
-		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
 		JLabel lblTemperatura = new JLabel("Temperatura");
-		lblTemperatura.setFont(new Font("Roboto Medium", Font.BOLD, 16));
-		lblTemperatura.setBounds(10, 0, 153, 24);
+		lblTemperatura.setFont(new Font("Roboto Medium", Font.BOLD, 22));
+		lblTemperatura.setBounds(24, 0, 150, 30);
 		panel8.add(lblTemperatura);
 		
 		JButton btnTengoFrio = new JButton("Tengo frio");
@@ -535,8 +531,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnTengoFrio.setBounds(5, 30, 118, 70);
+		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnTengoFrio.setBounds(24, 30, 170, 94);
 		panel8.add(btnTengoFrio);
 		
 		JButton btnTengoCalor = new JButton("Tengo calor");
@@ -551,8 +547,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnTengoCalor.setBounds(128, 30, 123, 70);
+		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnTengoCalor.setBounds(218, 30, 170, 94);
 		panel8.add(btnTengoCalor);
 		
 		JButton btnEstaFrio = new JButton("Está frio");
@@ -567,8 +563,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnEstaFrio.setBounds(5, 109, 118, 70);
+		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnEstaFrio.setBounds(24, 144, 170, 94);
 		panel8.add(btnEstaFrio);
 		
 		JButton btnEstaCaliente = new JButton("Está caliente");
@@ -583,8 +579,8 @@ public class Main extends JFrame {
 		        voice.deallocate();
 			}
 		});
-		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnEstaCaliente.setBounds(128, 109, 123, 70);
+		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnEstaCaliente.setBounds(218, 144, 170, 94);
 		panel8.add(btnEstaCaliente);
 		
 		JButton btnNewButton = new JButton("Teclado en pantalla");
@@ -599,9 +595,13 @@ public class Main extends JFrame {
 
 			}
 		});
-		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton.setBounds(40, 6, 176, 30);
+		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		btnNewButton.setBounds(86, 10, 240, 50);
 		panel4.add(btnNewButton);
+		
+		JPanel panel16 = new JPanel();
+		panel16.setBounds(1244, 174, 20, 747);
+		contentPane.add(panel16);
 		
 		btnConfiguracion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
