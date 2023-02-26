@@ -16,6 +16,7 @@ public class Configuracion extends JFrame {
 
 	private JPanel contentPane;
 	JLabel lblIdiomaSeleccionado;
+	JLabel lblTamanioSeleccionado;
 
 	/**
 	 * Launch the application.
@@ -104,6 +105,7 @@ public class Configuracion extends JFrame {
 		btnTamanio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "1";
+				lblTamanioSeleccionado.setText("Seleccionado: 800 x 600");
 			}
 		});
 		btnTamanio1.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -114,6 +116,7 @@ public class Configuracion extends JFrame {
 		btnTamanio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "2";
+				lblTamanioSeleccionado.setText("Seleccionado: 1360 x 600");
 			}
 		});
 		btnTamanio2.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -124,6 +127,7 @@ public class Configuracion extends JFrame {
 		btnTamanio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "3";
+				lblTamanioSeleccionado.setText("Seleccionado: 1920 x 1080");
 			}
 		});
 		btnTamanio3.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -132,6 +136,11 @@ public class Configuracion extends JFrame {
 		lblNewLabel.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		lblNewLabel.setBounds(283, 1, 40, 24);
 		panel_3.add(lblNewLabel);
+		
+		lblTamanioSeleccionado = new JLabel("Seleccionado: 800 x 600");
+		lblTamanioSeleccionado.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		lblTamanioSeleccionado.setBounds(228, 73, 216, 17);
+		panel_3.add(lblTamanioSeleccionado);
 		
 		JPanel panel_3_1 = new JPanel();
 		panel_3_1.setLayout(null);
@@ -175,9 +184,16 @@ public class Configuracion extends JFrame {
 		panel.add(panel_1_1_1_1_1);
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if (tamanio.equals("1")) {
 				Main main = new Main(idioma);
 				main.setVisible(true);
 				dispose();
+				}
+				if (tamanio.equals("2")) {
+					Main2 main = new Main2(idioma);
+					main.setVisible(true);
+					dispose();
+					}
 			}
 		});
 		
