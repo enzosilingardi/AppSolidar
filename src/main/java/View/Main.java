@@ -58,7 +58,7 @@ public class Main extends JFrame {
 		lblDialogosHabituales.setBounds(10, 0, 160, 30);
 		panel.add(lblDialogosHabituales);
 		
-		JButton btnHambre = new JButton("Tengo Hambre");
+		JButton btnHambre = new JButton("Tengo hambre");
 		btnHambre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -74,7 +74,7 @@ public class Main extends JFrame {
 		btnHambre.setBounds(10, 32, 240, 30);
 		panel.add(btnHambre);
 		
-		JButton btnSed = new JButton("Tengo Sed");
+		JButton btnSed = new JButton("Tengo sed");
 		btnSed.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -90,7 +90,7 @@ public class Main extends JFrame {
 		btnSed.setBounds(10, 68, 240, 30);
 		panel.add(btnSed);
 		
-		JButton btnSuenio = new JButton("Tengo Sueño");
+		JButton btnSuenio = new JButton("Tengo sueño");
 		btnSuenio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -106,7 +106,7 @@ public class Main extends JFrame {
 		btnSuenio.setBounds(10, 104, 240, 30);
 		panel.add(btnSuenio);
 		
-		JButton btnDientes = new JButton("Quiero Lavarme los Dientes");
+		JButton btnDientes = new JButton("Quiero lavarme los dientes");
 		btnDientes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -122,7 +122,7 @@ public class Main extends JFrame {
 		btnDientes.setBounds(260, 32, 240, 30);
 		panel.add(btnDientes);
 		
-		JButton btnBanio = new JButton("Quiero ir al Baño");
+		JButton btnBanio = new JButton("Quiero ir al baño");
 		btnBanio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -138,7 +138,7 @@ public class Main extends JFrame {
 		btnBanio.setBounds(260, 68, 240, 30);
 		panel.add(btnBanio);
 		
-		JButton btnBaniar = new JButton("Quiero Bañarme");
+		JButton btnBaniar = new JButton("Quiero bañarme");
 		btnBaniar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -155,7 +155,7 @@ public class Main extends JFrame {
 		panel.add(btnBaniar);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(0, 0, 786, 47);
+		panel_1.setBounds(0, 0, 520, 47);
 		contentPane.add(panel_1);
 		
 		JPanel panel_2 = new JPanel();
@@ -163,7 +163,7 @@ public class Main extends JFrame {
 		contentPane.add(panel_2);
 		
 		JPanel panel_2_1 = new JPanel();
-		panel_2_1.setBounds(776, 47, 10, 516);
+		panel_2_1.setBounds(776, 73, 10, 490);
 		contentPane.add(panel_2_1);
 		
 		JPanel panel_3 = new JPanel();
@@ -190,7 +190,7 @@ public class Main extends JFrame {
 		lblOcio.setFont(new Font("Roboto Medium", Font.BOLD, 16));
 		panel_7.add(lblOcio);
 		
-		JButton btnPaseo = new JButton("Quisiera Dar un Paseo");
+		JButton btnPaseo = new JButton("Quisiera dar un paseo");
 		btnPaseo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -206,7 +206,7 @@ public class Main extends JFrame {
 		btnPaseo.setBounds(14, 23, 240, 30);
 		panel_7.add(btnPaseo);
 		
-		JButton btnTele = new JButton("Quisiera Ver Algo en la Tele");
+		JButton btnTele = new JButton("Quisiera ver algo en la tele");
 		btnTele.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -223,7 +223,7 @@ public class Main extends JFrame {
 		btnTele.setBounds(14, 59, 240, 30);
 		panel_7.add(btnTele);
 		
-		JButton btnComputadora = new JButton("Quisiera Ver Algo en la Computadora");
+		JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");
 		btnComputadora.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -240,7 +240,7 @@ public class Main extends JFrame {
 		btnComputadora.setBounds(14, 95, 240, 30);
 		panel_7.add(btnComputadora);
 		
-		JButton btnTablet = new JButton("Quisiera Ver Algo en la Tablet");
+		JButton btnTablet = new JButton("Quisiera ver algo en la tablet");
 		btnTablet.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -256,7 +256,7 @@ public class Main extends JFrame {
 		btnTablet.setBounds(14, 131, 240, 30);
 		panel_7.add(btnTablet);
 		
-		JButton btnRadio = new JButton("Quisiera Escuchar Radio");
+		JButton btnRadio = new JButton("Quisiera escuchar radio");
 		btnRadio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -272,7 +272,7 @@ public class Main extends JFrame {
 		btnRadio.setBounds(264, 23, 240, 30);
 		panel_7.add(btnRadio);
 		
-		JButton btnMusica = new JButton("Quisiera Escuchar Música");
+		JButton btnMusica = new JButton("Quisiera escuchar música");
 		btnMusica.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -288,7 +288,7 @@ public class Main extends JFrame {
 		btnMusica.setBounds(264, 59, 240, 30);
 		panel_7.add(btnMusica);
 		
-		JButton btnAudiolibro = new JButton("Quisiera Escuchar un Audiolibro");
+		JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");
 		btnAudiolibro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -304,7 +304,7 @@ public class Main extends JFrame {
 		btnAudiolibro.setBounds(264, 95, 240, 30);
 		panel_7.add(btnAudiolibro);
 		
-		JButton btnLibro = new JButton("Quisiera que me Lean un Libro");
+		JButton btnLibro = new JButton("Quisiera que me lean un libro");
 		btnLibro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -320,7 +320,7 @@ public class Main extends JFrame {
 		btnLibro.setBounds(264, 131, 240, 30);
 		panel_7.add(btnLibro);
 		
-		JButton btnRopa = new JButton("Quisiera Cambiarme de Ropa");
+		JButton btnRopa = new JButton("Quisiera cambiarme de ropa");
 		btnRopa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -336,7 +336,7 @@ public class Main extends JFrame {
 		btnRopa.setBounds(514, 23, 240, 30);
 		panel_7.add(btnRopa);
 		
-		JButton btnCine = new JButton("Quisiera ir al Cine");
+		JButton btnCine = new JButton("Quisiera ir al cine");
 		btnCine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -352,7 +352,7 @@ public class Main extends JFrame {
 		btnCine.setBounds(514, 59, 240, 30);
 		panel_7.add(btnCine);
 		
-		JButton btnSalirAComer = new JButton("Quisiera Salir a Comer");
+		JButton btnSalirAComer = new JButton("Quisiera salir a comer");
 		btnSalirAComer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -389,7 +389,7 @@ public class Main extends JFrame {
 		contentPane.add(panel_8);
 		
 		JPanel panel_6_1 = new JPanel();
-		panel_6_1.setBounds(10, 192, 766, 10);
+		panel_6_1.setBounds(10, 192, 510, 10);
 		contentPane.add(panel_6_1);
 		
 		JPanel panel_6_2 = new JPanel();
@@ -452,7 +452,7 @@ public class Main extends JFrame {
 		btnNo.setBounds(112, 30, 89, 70);
 		panel_9.add(btnNo);
 		
-		JButton btnNoSe = new JButton("No Se");
+		JButton btnNoSe = new JButton("No se");
 		btnNoSe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -468,7 +468,7 @@ public class Main extends JFrame {
 		btnNoSe.setBounds(211, 30, 89, 70);
 		panel_9.add(btnNoSe);
 		
-		JButton btnTalVez = new JButton("Tal Vez");
+		JButton btnTalVez = new JButton("Tal vez");
 		btnTalVez.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -501,7 +501,7 @@ public class Main extends JFrame {
 		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		
 		JPanel panel_10 = new JPanel();
-		panel_10.setBounds(520, 202, 256, 112);
+		panel_10.setBounds(520, 124, 256, 190);
 		contentPane.add(panel_10);
 		panel_10.setLayout(null);
 		
@@ -510,7 +510,7 @@ public class Main extends JFrame {
 		lblTemperatura.setBounds(10, 0, 153, 19);
 		panel_10.add(lblTemperatura);
 		
-		JButton btnTengoFrio = new JButton("Tengo Frio");
+		JButton btnTengoFrio = new JButton("Tengo frio");
 		btnTengoFrio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -526,7 +526,7 @@ public class Main extends JFrame {
 		btnTengoFrio.setBounds(10, 30, 113, 70);
 		panel_10.add(btnTengoFrio);
 		
-		JButton btnTengoCalor = new JButton("Tengo Calor");
+		JButton btnTengoCalor = new JButton("Tengo calor");
 		btnTengoCalor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -542,8 +542,18 @@ public class Main extends JFrame {
 		btnTengoCalor.setBounds(133, 30, 113, 70);
 		panel_10.add(btnTengoCalor);
 		
+		JButton btnEstaFrio = new JButton("Esta frio");
+		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnEstaFrio.setBounds(10, 109, 113, 70);
+		panel_10.add(btnEstaFrio);
+		
+		JButton btnEstaCaliente = new JButton("Esta caliente");
+		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnEstaCaliente.setBounds(133, 109, 113, 70);
+		panel_10.add(btnEstaCaliente);
+		
 		JPanel panel_10_1 = new JPanel();
-		panel_10_1.setBounds(520, 47, 256, 144);
+		panel_10_1.setBounds(520, 73, 256, 42);
 		contentPane.add(panel_10_1);
 		panel_10_1.setLayout(null);
 		
@@ -560,8 +570,12 @@ public class Main extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton.setBounds(40, 11, 176, 25);
+		btnNewButton.setBounds(40, 6, 176, 30);
 		panel_10_1.add(btnNewButton);
+		
+		JPanel panel_11 = new JPanel();
+		panel_11.setBounds(520, 0, 266, 73);
+		contentPane.add(panel_11);
 		btnConfiguracion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Configuracion con = new Configuracion();
