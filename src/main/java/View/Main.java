@@ -622,6 +622,7 @@ public class Main extends JFrame {
 		}
 		
 		if (idioma.equals("ing")) {
+		
 			JLabel lblDialogosHabituales = new JLabel("Usual Dialogues");
 			lblDialogosHabituales.setFont(new Font("Roboto Medium", Font.BOLD, 16));
 			lblDialogosHabituales.setBounds(10, 0, 160, 24);
@@ -745,7 +746,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnPaseo.setBounds(14, 23, 240, 30);
 			panel10.add(btnPaseo);
 			
@@ -762,11 +763,11 @@ public class Main extends JFrame {
 
 				}
 			});
-			btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnTele.setBounds(14, 59, 240, 30);
 			panel10.add(btnTele);
 			
-			JButton btnComputadora = new JButton("I would like to watch something on the computer");
+			JButton btnComputadora = new JButton("I would like to watch something on the pc");
 			btnComputadora.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -779,7 +780,7 @@ public class Main extends JFrame {
 
 				}
 			});
-			btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnComputadora.setBounds(14, 95, 240, 30);
 			panel10.add(btnComputadora);
 			
@@ -795,7 +796,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnTablet.setBounds(14, 131, 240, 30);
 			panel10.add(btnTablet);
 			
@@ -811,7 +812,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnRadio.setBounds(264, 23, 240, 30);
 			panel10.add(btnRadio);
 			
@@ -827,7 +828,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnMusica.setBounds(264, 59, 240, 30);
 			panel10.add(btnMusica);
 			
@@ -843,7 +844,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnAudiolibro.setBounds(264, 95, 240, 30);
 			panel10.add(btnAudiolibro);
 			
@@ -859,7 +860,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnLibro.setBounds(264, 131, 240, 30);
 			panel10.add(btnLibro);
 			
@@ -875,7 +876,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnRopa.setBounds(514, 23, 240, 30);
 			panel10.add(btnRopa);
 			
@@ -891,7 +892,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnCine.setBounds(514, 59, 240, 30);
 			panel10.add(btnCine);
 			
@@ -907,7 +908,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnSalirAComer.setBounds(514, 95, 240, 30);
 			panel10.add(btnSalirAComer);
 			
@@ -923,7 +924,7 @@ public class Main extends JFrame {
 			        voice.deallocate();
 				}
 			});
-			btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
+			btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnJugar.setBounds(514, 131, 240, 30);
 			panel10.add(btnJugar);
 			
@@ -969,7 +970,7 @@ public class Main extends JFrame {
 			btnNo.setBounds(112, 30, 89, 70);
 			panel7.add(btnNo);
 			
-			JButton btnNoSe = new JButton("I don´t know");
+			JButton btnNoSe = new JButton("<html><center>I don´t know</html>");
 			btnNoSe.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
