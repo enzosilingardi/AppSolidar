@@ -110,13 +110,13 @@ public class Configuracion extends JFrame {
 		});
 		btnTamanio1.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
-		JButton btnTamanio2 = new JButton("1360 x 600");
+		JButton btnTamanio2 = new JButton("1280 x 960");
 		btnTamanio2.setBounds(250, 25, 150, 40);
 		panel_3.add(btnTamanio2);
 		btnTamanio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "2";
-				lblTamanioSeleccionado.setText("Seleccionado: 1360 x 600");
+				lblTamanioSeleccionado.setText("Seleccionado: 1280 x 960");
 			}
 		});
 		btnTamanio2.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
