@@ -1519,7 +1519,7 @@ public class Main extends JFrame {
 		lblRespuestas.setFont(new Font("Roboto Medium", Font.BOLD, 16));
 		panel7.add(lblRespuestas);
 		
-		JButton btnSi = new JButton("Si");
+		JButton btnSi = new JButton("Sí");
 		btnSi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -1551,7 +1551,7 @@ public class Main extends JFrame {
 		btnNo.setBounds(112, 30, 89, 70);
 		panel7.add(btnNo);
 		
-		JButton btnNoSe = new JButton("No se");
+		JButton btnNoSe = new JButton("No sé");
 		btnNoSe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
