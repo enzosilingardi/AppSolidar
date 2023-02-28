@@ -31,11 +31,13 @@ public class Main3 extends JFrame {
 	 */
 	public Main3() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1246, 882);
+		setBounds(100, 100, 1920, 1080);
+		setResizable(false);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
 	}
 
 }

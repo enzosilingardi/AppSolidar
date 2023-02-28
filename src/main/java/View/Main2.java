@@ -8,6 +8,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.Dimension;
 
 public class Main2 extends JFrame {
 
@@ -33,6 +34,7 @@ public class Main2 extends JFrame {
 	 * Create the frame.
 	 */
 	public Main2() {
+		setMinimumSize(new Dimension(1980, 960));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1280, 960);
 		contentPane = new JPanel();
