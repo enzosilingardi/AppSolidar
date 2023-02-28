@@ -44,7 +44,7 @@ public class Main_3 extends JFrame {
 	 */
 	public Main_3(String idioma) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1280, 960);
+		setBounds(0, 0, 1920, 1080);
 
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -1187,7 +1187,7 @@ public class Main_3 extends JFrame {
 	}
 
 	public Main_3() {
-		setBounds(new Rectangle(0, 0, 1152, 864));
+		setBounds(new Rectangle(0, 0, 1920, 1080));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
