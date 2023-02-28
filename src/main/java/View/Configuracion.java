@@ -190,7 +190,7 @@ public class Configuracion extends JFrame {
 				dispose();
 				}
 				if (tamanio.equals("2")) {
-					Main2 main = new Main2(idioma);
+					Main_3 main = new Main_3(idioma);
 					main.setVisible(true);
 					dispose();
 					}
