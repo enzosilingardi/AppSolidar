@@ -5,10 +5,15 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 
 public class Main_2 extends JFrame {
@@ -62,31 +67,97 @@ public class Main_2 extends JFrame {
 		panel3.add(lblDialogosHabituales);
 		
 		JButton btnHambre = new JButton("Tengo hambre");
+		btnHambre.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh ahm-breh");
+		        voice.deallocate();
+			}
+		});
 		btnHambre.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnHambre.setBounds(30, 30, 458, 50);
 		panel3.add(btnHambre);
 		
 		JButton btnSed = new JButton("Tengo sed");
+		btnSed.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh sehd");
+		        voice.deallocate();
+			}
+		});
 		btnSed.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnSed.setBounds(30, 90, 458, 50);
 		panel3.add(btnSed);
 		
 		JButton btnSuenio = new JButton("Tengo sueño");
+		btnSuenio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh sweh-nyoh");
+		        voice.deallocate();
+			}
+		});
 		btnSuenio.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnSuenio.setBounds(30, 150, 458, 50);
 		panel3.add(btnSuenio);
 		
 		JButton btnDientes = new JButton("Quiero lavarme los dientes");
+		btnDientes.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-eh-roh lah-bah-ahr-meh lohs dee-ehn-tehs");
+		        voice.deallocate();
+			}
+		});
 		btnDientes.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnDientes.setBounds(508, 30, 458, 50);
 		panel3.add(btnDientes);
 		
 		JButton btnBanio = new JButton("Quiero ir al baño");
+		btnBanio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-eh-roh eer ahl bah-nee-oh");
+		        voice.deallocate();
+			}
+		});
 		btnBanio.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnBanio.setBounds(508, 90, 458, 50);
 		panel3.add(btnBanio);
 		
 		JButton btnBaniar = new JButton("Quiero bañarme");
+		btnBaniar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-eh-roh bah-nee-ahr-meh");
+		        voice.deallocate();
+			}
+		});
 		btnBaniar.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnBaniar.setBounds(508, 150, 458, 50);
 		panel3.add(btnBaniar);
@@ -97,6 +168,17 @@ public class Main_2 extends JFrame {
 		contentPane.add(panel4);
 		
 		JButton btnNewButton = new JButton("Teclado en pantalla");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		        try {
+		        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");
+		        } catch (IOException e1) {
+		            e1.printStackTrace();
+		        }
+
+
+			}
+		});
 		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnNewButton.setBounds(10, 5, 330, 50);
 		panel4.add(btnNewButton);
@@ -120,26 +202,81 @@ public class Main_2 extends JFrame {
 		panel7.add(lblRespuestas);
 		
 		JButton btnSi = new JButton("Sí");
+		btnSi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("see");
+		        voice.deallocate();
+			}
+		});
 		btnSi.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnSi.setBounds(92, 30, 130, 85);
 		panel7.add(btnSi);
 		
 		JButton btnNo = new JButton("No");
+		btnNo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("noh");
+		        voice.deallocate();
+			}
+		});
 		btnNo.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnNo.setBounds(262, 30, 130, 85);
 		panel7.add(btnNo);
 		
 		JButton btnNoSe = new JButton("No sé");
+		btnNoSe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("noh seh-eh");
+		        voice.deallocate();
+			}
+		});
 		btnNoSe.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnNoSe.setBounds(432, 30, 130, 85);
 		panel7.add(btnNoSe);
 		
 		JButton btnTalVez = new JButton("Tal vez");
+		btnTalVez.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tahl behs");
+		        voice.deallocate();
+			}
+		});
 		btnTalVez.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnTalVez.setBounds(602, 30, 130, 85);
 		panel7.add(btnTalVez);
 		
 		JButton btnGracias = new JButton("Gracias!");
+		btnGracias.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("grah-syahs!");
+		        voice.deallocate();
+			}
+		});
 		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnGracias.setBounds(772, 30, 130, 85);
 		panel7.add(btnGracias);
@@ -155,21 +292,65 @@ public class Main_2 extends JFrame {
 		panel8.add(lblTemperatura);
 		
 		JButton btnTengoFrio = new JButton("Tengo frio");
+		btnTengoFrio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh free-oh");
+		        voice.deallocate();
+			}
+		});
 		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnTengoFrio.setBounds(10, 30, 160, 80);
 		panel8.add(btnTengoFrio);
 		
 		JButton btnTengoCalor = new JButton("Tengo calor");
+		btnTengoCalor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("tehng-goh kah-lohr");
+		        voice.deallocate();
+			}
+		});
 		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnTengoCalor.setBounds(175, 30, 160, 80);
 		panel8.add(btnTengoCalor);
 		
 		JButton btnEstaFrio = new JButton("Está frio");
+		btnEstaFrio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("ehs-tah-ah free-oh");
+		        voice.deallocate();
+			}
+		});
 		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnEstaFrio.setBounds(10, 120, 160, 80);
 		panel8.add(btnEstaFrio);
 		
 		JButton btnEstaCaliente = new JButton("Está caliente");
+		btnEstaCaliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("ehs-tah-ah kah-lee-ehn-teh");
+		        voice.deallocate();
+			}
+		});
 		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnEstaCaliente.setBounds(175, 120, 160, 80);
 		panel8.add(btnEstaCaliente);
@@ -189,26 +370,83 @@ public class Main_2 extends JFrame {
 		panel10.add(lblOcio);
 		
 		JButton btnPaseo = new JButton("Quisiera dar un paseo");
+		btnPaseo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah dahr oon pah-seh-oh");
+		        voice.deallocate();
+			}
+		});
 		btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnPaseo.setBounds(31, 30, 414, 40);
 		panel10.add(btnPaseo);
 		
 		JButton btnTele = new JButton("Quisiera ver algo en la tele");
+		btnTele.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah teh-leh");
+		        voice.deallocate();
+
+			}
+		});
 		btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnTele.setBounds(31, 75, 414, 40);
 		panel10.add(btnTele);
 		
 		JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");
+		btnComputadora.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah kohm-poo-tah-doh-rah");
+		        voice.deallocate();
+
+			}
+		});
 		btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnComputadora.setBounds(31, 120, 414, 40);
 		panel10.add(btnComputadora);
 		
 		JButton btnTablet = new JButton("Quisiera ver algo en la tablet");
+		btnTablet.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah behr ahl-goh ehn lah tahb-liht");
+		        voice.deallocate();
+			}
+		});
 		btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnTablet.setBounds(31, 165, 414, 40);
 		panel10.add(btnTablet);
 		
 		JButton btnRadio = new JButton("Quisiera escuchar radio");
+		btnRadio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah ehs-koo-chahr rrah-dyoh");
+		        voice.deallocate();
+			}
+		});
 		btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnRadio.setBounds(465, 30, 414, 40);
 		panel10.add(btnRadio);
@@ -216,6 +454,13 @@ public class Main_2 extends JFrame {
 		JButton btnMusica = new JButton("Quisiera escuchar música");
 		btnMusica.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah ehs-koo-chahr moo-see-kah");
+		        voice.deallocate();
 			}
 		});
 		btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
@@ -223,31 +468,97 @@ public class Main_2 extends JFrame {
 		panel10.add(btnMusica);
 		
 		JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");
+		btnAudiolibro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah ehs-koo-chahr oon ow-dyoh-lee-broh");
+		        voice.deallocate();
+			}
+		});
 		btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnAudiolibro.setBounds(465, 120, 414, 40);
 		panel10.add(btnAudiolibro);
 		
 		JButton btnLibro = new JButton("Quisiera que me lean un libro");
+		btnLibro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah keh meh leh-ahn oon lee-broh");
+		        voice.deallocate();
+			}
+		});
 		btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnLibro.setBounds(465, 165, 414, 40);
 		panel10.add(btnLibro);
 		
 		JButton btnRopa = new JButton("Quisiera cambiarme de ropa");
+		btnRopa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah kahm-bee-ahr-meh deh-eh rroh-pah");
+		        voice.deallocate();
+			}
+		});
 		btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnRopa.setBounds(899, 30, 414, 40);
 		panel10.add(btnRopa);
 		
 		JButton btnCine = new JButton("Quisiera ir al cine");
+		btnCine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah eer ahl see-neh");
+		        voice.deallocate();
+			}
+		});
 		btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnCine.setBounds(899, 75, 414, 40);
 		panel10.add(btnCine);
 		
 		JButton btnSalirAComer = new JButton("Quisiera salir a comer");
+		btnSalirAComer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah sah-ah-lee-eer ah koh-mehr");
+		        voice.deallocate();
+			}
+		});
 		btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnSalirAComer.setBounds(899, 120, 414, 40);
 		panel10.add(btnSalirAComer);
 		
 		JButton btnJugar = new JButton("Quisiera jugar a algo");
+		btnJugar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+				Voice voice;
+		        VoiceManager voiceManager = VoiceManager.getInstance();
+		        voice = voiceManager.getVoice("kevin16");
+		        voice.allocate();
+		        voice.speak("kee-see-eh-rah hoo-gah-ahr ah ahl-goh");
+		        voice.deallocate();
+			}
+		});
 		btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnJugar.setBounds(899, 165, 414, 40);
 		panel10.add(btnJugar);
@@ -264,6 +575,9 @@ public class Main_2 extends JFrame {
 		JButton btnConfiguracion = new JButton("Configuración");
 		btnConfiguracion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Configuracion con = new Configuracion();
+				con.setVisible(true);
+				dispose();
 			}
 		});
 		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
@@ -280,6 +594,13 @@ public class Main_2 extends JFrame {
 		contentPane.add(panel14);
 		
 		JButton btnEmergencias = new JButton("Emergencias");
+		btnEmergencias.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Emergencias em = new Emergencias();
+				em.setVisible(true);
+				dispose();
+			}
+		});
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnEmergencias.setBounds(126, 13, 415, 40);
 		panel14.add(btnEmergencias);

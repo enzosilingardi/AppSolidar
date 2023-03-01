@@ -72,7 +72,7 @@ public class Comandos extends JFrame {
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Main main = new Main();
+				Main_1 main = new Main_1();
 				main.setVisible(true);
 				dispose();
 			}

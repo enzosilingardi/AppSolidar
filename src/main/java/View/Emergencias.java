@@ -93,7 +93,7 @@ public class Emergencias extends JFrame {
 		btnVolver.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Main main = new Main();
+				Main_1 main = new Main_1();
 				main.setVisible(true);
 				dispose();
 			}
