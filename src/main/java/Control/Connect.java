@@ -4,8 +4,8 @@ package Control;
 import java.sql.*;
 
 
-public class Connect {
-    public static Connection getConexion() throws ClassNotFoundException{
+public class Connect {      //Esta clase no es utilizada de momento en este programa
+    public static Connection getConexion() throws ClassNotFoundException{         
         
         String connectionUrl = "jdbc:sqlserver://DESKTOP-UQUV652\\SQLEXPRESS:1433;"
                 +"database=DB_Veterinary;"
