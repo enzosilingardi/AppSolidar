@@ -13,7 +13,7 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 
 public class Configuracion extends JFrame {
-
+    
 	private JPanel contentPane;
 	JLabel lblIdiomaSeleccionado;
 	JLabel lblTamanioSeleccionado;
@@ -39,7 +39,7 @@ public class Configuracion extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Configuracion() {
+	public Configuracion() {                               //Crea la ventana
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 640, 480);
 		contentPane = new JPanel();
@@ -53,7 +53,7 @@ public class Configuracion extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JButton btnVolver = new JButton("Volver");
+		JButton btnVolver = new JButton("Volver");                      //Vuelve al menú principal
 		btnVolver.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		btnVolver.setBounds(246, 385, 150, 40);
 		panel.add(btnVolver);
@@ -63,7 +63,7 @@ public class Configuracion extends JFrame {
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JLabel lblTitulo = new JLabel("Configuración");
+		JLabel lblTitulo = new JLabel("Configuración");             
 		lblTitulo.setBounds(246, 0, 140, 40);
 		panel_1.add(lblTitulo);
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);

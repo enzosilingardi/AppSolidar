@@ -14,7 +14,7 @@ import java.awt.event.ActionEvent;
 public class Comandos extends JFrame {
 
 	private JPanel contentPane;
-
+    //Esta ventana no es utilizada en la versión actual
 	/**
 	 * Launch the application.
 	 */
@@ -34,7 +34,7 @@ public class Comandos extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Comandos() {
+	public Comandos() {                                     //Crea la ventana
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -69,7 +69,7 @@ public class Comandos extends JFrame {
 		btnRespuestas.setBounds(133, 194, 170, 30);
 		panel.add(btnRespuestas);
 		
-		JButton btnVolver = new JButton("Volver");
+		JButton btnVolver = new JButton("Volver");                 //Cierra la ventana
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Main_1 main = new Main_1();

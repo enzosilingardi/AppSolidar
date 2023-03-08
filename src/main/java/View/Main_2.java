@@ -18,6 +18,8 @@ import java.awt.event.ActionEvent;
 
 public class Main_2 extends JFrame {
 
+	//El código de esta ventana no se utiliza porque decidimos copiarlo al Main_1 dentro un if
+	
 	private JPanel contentPane;
 
 	/**

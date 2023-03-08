@@ -21,6 +21,8 @@ import java.awt.Rectangle;
 
 public class Main_3 extends JFrame {
 
+	//El código de esta ventana no se utiliza porque decidimos copiarlo al Main_1 dentro un if
+	
 	private JPanel contentPane;
 
 	/**

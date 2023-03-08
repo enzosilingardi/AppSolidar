@@ -36,7 +36,7 @@ public class Emergencias extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Emergencias() {
+	public Emergencias() {                                 //Crea la ventana
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 452, 267);
 		contentPane = new JPanel();
@@ -50,7 +50,7 @@ public class Emergencias extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JButton btnAvisoRobo = new JButton("Aviso de Robo");
+		JButton btnAvisoRobo = new JButton("Aviso de Robo");              
 		btnAvisoRobo.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnAvisoRobo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -78,6 +78,7 @@ public class Emergencias extends JFrame {
 		btnAvisoConflicto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
+					//Abre WhatsApp Web y escribe un mensaje para el número indicado en el URL
 					java.awt.Desktop.getDesktop().browse(java.net.URI.create("https://api.whatsapp.com/send?phone=+5492342414379&text=Aviso%20de%20conflicto%20domestico"));
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
@@ -89,7 +90,7 @@ public class Emergencias extends JFrame {
 		btnAvisoConflicto.setBounds(104, 52, 219, 30);
 		panel.add(btnAvisoConflicto);
 		
-		JButton btnVolver = new JButton("Volver");
+		JButton btnVolver = new JButton("Volver");                   //Vuelve al menú principal
 		btnVolver.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
