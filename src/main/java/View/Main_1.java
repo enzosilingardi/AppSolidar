@@ -1261,7 +1261,7 @@ public class Main_1 extends JFrame {
 			btnNewButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 			        try {
-			        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");		//Envía a cmd el comando para ejecutar el teclado en pantalla
+			        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");		//Envía a cmd el comando para ejecutar el teclado en pantalla 
 			        } catch (IOException e1) {
 			            e1.printStackTrace();
 			        }
@@ -2047,7 +2047,7 @@ public class Main_1 extends JFrame {
 				btnPaseo.setBounds(31, 30, 414, 40);
 				panel10.add(btnPaseo);
 				
-				JButton btnTele = new JButton("I would like to watch something on the tv");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTele = new JButton("I would like to watch something on the tv");	 //Igual que en el botón "Tengo hambre"
 				btnTele.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2064,7 +2064,7 @@ public class Main_1 extends JFrame {
 				btnTele.setBounds(31, 75, 414, 40);
 				panel10.add(btnTele);
 				
-				JButton btnComputadora = new JButton("I would like to watch something on the pc");			 //Igual que en el botón "Tengo hambre"
+				JButton btnComputadora = new JButton("I would like to watch something on the pc");	 //Igual que en el botón "Tengo hambre"
 				btnComputadora.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2081,7 +2081,7 @@ public class Main_1 extends JFrame {
 				btnComputadora.setBounds(31, 120, 414, 40);
 				panel10.add(btnComputadora);
 				
-				JButton btnTablet = new JButton("I would like to watch something on the tablet");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTablet = new JButton("I would like to watch something on the tablet");	 //Igual que en el botón "Tengo hambre"
 				btnTablet.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2097,7 +2097,7 @@ public class Main_1 extends JFrame {
 				btnTablet.setBounds(31, 165, 414, 40);
 				panel10.add(btnTablet);
 				
-				JButton btnRadio = new JButton("I would like to listen to the radio");			 //Igual que en el botón "Tengo hambre"
+				JButton btnRadio = new JButton("I would like to listen to the radio");	//Igual que en el botón "Tengo hambre"
 				btnRadio.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2113,7 +2113,7 @@ public class Main_1 extends JFrame {
 				btnRadio.setBounds(465, 30, 414, 40);
 				panel10.add(btnRadio);
 				
-				JButton btnMusica = new JButton("I would like to listen to music");			 //Igual que en el botón "Tengo hambre"
+				JButton btnMusica = new JButton("I would like to listen to music");	 //Igual que en el botón "Tengo hambre"
 				btnMusica.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2129,7 +2129,7 @@ public class Main_1 extends JFrame {
 				btnMusica.setBounds(465, 75, 414, 40);
 				panel10.add(btnMusica);
 				
-				JButton btnAudiolibro = new JButton("I would like to listen to an audiobook");			 //Igual que en el botón "Tengo hambre"
+				JButton btnAudiolibro = new JButton("I would like to listen to an audiobook");	 //Igual que en el botón "Tengo hambre"
 				btnAudiolibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2145,7 +2145,7 @@ public class Main_1 extends JFrame {
 				btnAudiolibro.setBounds(465, 120, 414, 40);
 				panel10.add(btnAudiolibro);
 				
-				JButton btnLibro = new JButton("I would like you to read me a book");			 //Igual que en el botón "Tengo hambre"
+				JButton btnLibro = new JButton("I would like you to read me a book");	 //Igual que en el botón "Tengo hambre"
 				btnLibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2161,7 +2161,7 @@ public class Main_1 extends JFrame {
 				btnLibro.setBounds(465, 165, 414, 40);
 				panel10.add(btnLibro);
 				
-				JButton btnRopa = new JButton("I would like to change my clothes");			 //Igual que en el botón "Tengo hambre"
+				JButton btnRopa = new JButton("I would like to change my clothes");		//Igual que en el botón "Tengo hambre"
 				btnRopa.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2177,7 +2177,7 @@ public class Main_1 extends JFrame {
 				btnRopa.setBounds(899, 30, 414, 40);
 				panel10.add(btnRopa);
 				
-				JButton btnCine = new JButton("I would like to go to the cinema");			 //Igual que en el botón "Tengo hambre"
+				JButton btnCine = new JButton("I would like to go to the cinema");	//Igual que en el botón "Tengo hambre"
 				btnCine.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2193,7 +2193,7 @@ public class Main_1 extends JFrame {
 				btnCine.setBounds(899, 75, 414, 40);
 				panel10.add(btnCine);
 				
-				JButton btnSalirAComer = new JButton("I would like to go out to eat");			 //Igual que en el botón "Tengo hambre"
+				JButton btnSalirAComer = new JButton("I would like to go out to eat");	 //Igual que en el botón "Tengo hambre"
 				btnSalirAComer.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2209,7 +2209,7 @@ public class Main_1 extends JFrame {
 				btnSalirAComer.setBounds(899, 120, 414, 40);
 				panel10.add(btnSalirAComer);
 				
-				JButton btnJugar = new JButton("I would like to play something");			 //Igual que en el botón "Tengo hambre"
+				JButton btnJugar = new JButton("I would like to play something");	 //Igual que en el botón "Tengo hambre"
 				btnJugar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2234,7 +2234,7 @@ public class Main_1 extends JFrame {
 				panel12.setBounds(0, 653, 667, 66);
 				contentPane.add(panel12);
 				
-				JButton btnConfiguracion = new JButton("Configuration");			//Botón que abre la ventana Configuración
+				JButton btnConfiguracion = new JButton("Configuration");	//Botón que abre la ventana Configuración
 				btnConfiguracion.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Configuracion con = new Configuracion();
@@ -2642,7 +2642,7 @@ public class Main_1 extends JFrame {
 				btnTele.setBounds(20, 100, 608, 60);
 				panel10.add(btnTele);
 				
-				JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");			 //Igual que en el botón "Tengo hambre"
+				JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");	 //Igual que en el botón "Tengo hambre"
 				btnComputadora.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2659,7 +2659,7 @@ public class Main_1 extends JFrame {
 				btnComputadora.setBounds(20, 170, 608, 60);
 				panel10.add(btnComputadora);
 				
-				JButton btnTablet = new JButton("Quisiera ver algo en la tablet");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTablet = new JButton("Quisiera ver algo en la tablet");	 //Igual que en el botón "Tengo hambre"
 				btnTablet.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2675,7 +2675,7 @@ public class Main_1 extends JFrame {
 				btnTablet.setBounds(20, 240, 608, 60);
 				panel10.add(btnTablet);
 				
-				JButton btnRadio = new JButton("Quisiera escuchar radio");			 //Igual que en el botón "Tengo hambre"
+				JButton btnRadio = new JButton("Quisiera escuchar radio");		//Igual que en el botón "Tengo hambre"
 				btnRadio.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2691,7 +2691,7 @@ public class Main_1 extends JFrame {
 				btnRadio.setBounds(648, 30, 608, 60);
 				panel10.add(btnRadio);
 				
-				JButton btnMusica = new JButton("Quisiera escuchar música");			 //Igual que en el botón "Tengo hambre"
+				JButton btnMusica = new JButton("Quisiera escuchar música");	 //Igual que en el botón "Tengo hambre"
 				btnMusica.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2707,7 +2707,7 @@ public class Main_1 extends JFrame {
 				btnMusica.setBounds(648, 100, 608, 60);
 				panel10.add(btnMusica);
 				
-				JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");			 //Igual que en el botón "Tengo hambre"
+				JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");	 //Igual que en el botón "Tengo hambre"
 				btnAudiolibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2723,7 +2723,7 @@ public class Main_1 extends JFrame {
 				btnAudiolibro.setBounds(648, 170, 608, 60);
 				panel10.add(btnAudiolibro);
 				
-				JButton btnLibro = new JButton("Quisiera que me lean un libro");			 //Igual que en el botón "Tengo hambre"
+				JButton btnLibro = new JButton("Quisiera que me lean un libro");	 //Igual que en el botón "Tengo hambre"
 				btnLibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2739,7 +2739,7 @@ public class Main_1 extends JFrame {
 				btnLibro.setBounds(648, 240, 608, 60);
 				panel10.add(btnLibro);
 				
-				JButton btnRopa = new JButton("Quisiera cambiarme de ropa");			 //Igual que en el botón "Tengo hambre"
+				JButton btnRopa = new JButton("Quisiera cambiarme de ropa");	//Igual que en el botón "Tengo hambre"
 				btnRopa.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2755,7 +2755,7 @@ public class Main_1 extends JFrame {
 				btnRopa.setBounds(1276, 30, 608, 60);
 				panel10.add(btnRopa);
 				
-				JButton btnCine = new JButton("Quisiera ir al cine");			 //Igual que en el botón "Tengo hambre"
+				JButton btnCine = new JButton("Quisiera ir al cine");	 //Igual que en el botón "Tengo hambre"
 				btnCine.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2771,7 +2771,7 @@ public class Main_1 extends JFrame {
 				btnCine.setBounds(1276, 100, 608, 60);
 				panel10.add(btnCine);
 				
-				JButton btnSalirAComer = new JButton("Quisiera salir a comer");			 //Igual que en el botón "Tengo hambre"
+				JButton btnSalirAComer = new JButton("Quisiera salir a comer");	 //Igual que en el botón "Tengo hambre"
 				btnSalirAComer.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2787,7 +2787,7 @@ public class Main_1 extends JFrame {
 				btnSalirAComer.setBounds(1276, 170, 608, 60);
 				panel10.add(btnSalirAComer);
 				
-				JButton btnJugar = new JButton("Quisiera jugar a algo");			 //Igual que en el botón "Tengo hambre"
+				JButton btnJugar = new JButton("Quisiera jugar a algo");	 //Igual que en el botón "Tengo hambre"
 				btnJugar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -2812,7 +2812,7 @@ public class Main_1 extends JFrame {
 				panel12.setBounds(0, 911, 947, 120);
 				contentPane.add(panel12);
 				
-				JButton btnConfiguracion = new JButton("Configuración");			//Botón que abre la ventana Configuración
+				JButton btnConfiguracion = new JButton("Configuración");	//Botón que abre la ventana Configuración
 				btnConfiguracion.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Configuracion con = new Configuracion();
@@ -2833,7 +2833,7 @@ public class Main_1 extends JFrame {
 				panel14.setBounds(957, 911, 947, 120);
 				contentPane.add(panel14);
 				
-				JButton btnEmergencias = new JButton("Emergencias");			//Botón que abre la ventana Emergencias
+				JButton btnEmergencias = new JButton("Emergencias");	//Botón que abre la ventana Emergencias
 				btnEmergencias.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Emergencias em = new Emergencias();
@@ -2982,11 +2982,11 @@ public class Main_1 extends JFrame {
 				panel4.setBounds(1444, 161, 460, 100);
 				contentPane.add(panel4);
 				
-				JButton btnNewButton = new JButton("Virtual keyboard");			//Botón que abre el teclado en pantalla
+				JButton btnNewButton = new JButton("Virtual keyboard");		//Botón que abre el teclado en pantalla
 				btnNewButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 				        try {
-				        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");			//Envía el comando al cmd para ejecutar el teclado en pantalla
+				        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");		//Envía el comando al cmd para ejecutar el teclado en pantalla
 				        } catch (IOException e1) {
 				            e1.printStackTrace();
 				        }
@@ -3032,7 +3032,7 @@ public class Main_1 extends JFrame {
 				btnSi.setBounds(101, 30, 190, 110);
 				panel7.add(btnSi);
 				
-				JButton btnNo = new JButton("No");				 //Igual que en el botón "Tengo hambre"
+				JButton btnNo = new JButton("No");		 //Igual que en el botón "Tengo hambre"
 				btnNo.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3048,7 +3048,7 @@ public class Main_1 extends JFrame {
 				btnNo.setBounds(364, 30, 190, 110);
 				panel7.add(btnNo);
 				
-				JButton btnNoSe = new JButton("<html><center>I don´t know</html>");			 //Igual que en el botón "Tengo hambre"
+				JButton btnNoSe = new JButton("<html><center>I don´t know</html>");		 //Igual que en el botón "Tengo hambre"
 				btnNoSe.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3064,7 +3064,7 @@ public class Main_1 extends JFrame {
 				btnNoSe.setBounds(627, 30, 190, 110);
 				panel7.add(btnNoSe);
 				
-				JButton btnTalVez = new JButton("Maybe");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTalVez = new JButton("Maybe");	 //Igual que en el botón "Tengo hambre"
 				btnTalVez.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3080,7 +3080,7 @@ public class Main_1 extends JFrame {
 				btnTalVez.setBounds(890, 30, 190, 110);
 				panel7.add(btnTalVez);
 				
-				JButton btnGracias = new JButton("Thanks!");			 //Igual que en el botón "Tengo hambre"
+				JButton btnGracias = new JButton("Thanks!");	 //Igual que en el botón "Tengo hambre"
 				btnGracias.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3106,7 +3106,7 @@ public class Main_1 extends JFrame {
 				lblTemperatura.setBounds(20, 0, 150, 30);
 				panel8.add(lblTemperatura);
 				
-				JButton btnTengoFrio = new JButton("I am cold");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTengoFrio = new JButton("I am cold");	 //Igual que en el botón "Tengo hambre"
 				btnTengoFrio.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3122,7 +3122,7 @@ public class Main_1 extends JFrame {
 				btnTengoFrio.setBounds(30, 30, 190, 110);
 				panel8.add(btnTengoFrio);
 				
-				JButton btnTengoCalor = new JButton("I am hot");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTengoCalor = new JButton("I am hot");	 //Igual que en el botón "Tengo hambre"
 				btnTengoCalor.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3138,7 +3138,7 @@ public class Main_1 extends JFrame {
 				btnTengoCalor.setBounds(240, 30, 190, 110);
 				panel8.add(btnTengoCalor);
 				
-				JButton btnEstaFrio = new JButton("It is cold");			 //Igual que en el botón "Tengo hambre"
+				JButton btnEstaFrio = new JButton("It is cold");	//Igual que en el botón "Tengo hambre"
 				btnEstaFrio.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3154,7 +3154,7 @@ public class Main_1 extends JFrame {
 				btnEstaFrio.setBounds(30, 150, 190, 110);
 				panel8.add(btnEstaFrio);
 				
-				JButton btnEstaCaliente = new JButton("It is hot");			 //Igual que en el botón "Tengo hambre"
+				JButton btnEstaCaliente = new JButton("It is hot");		 //Igual que en el botón "Tengo hambre"
 				btnEstaCaliente.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3184,7 +3184,7 @@ public class Main_1 extends JFrame {
 				lblOcio.setBounds(20, 0, 150, 30);
 				panel10.add(lblOcio);
 				
-				JButton btnPaseo = new JButton("I would like to take a walk");			 //Igual que en el botón "Tengo hambre"
+				JButton btnPaseo = new JButton("I would like to take a walk");	 //Igual que en el botón "Tengo hambre"
 				btnPaseo.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3200,7 +3200,7 @@ public class Main_1 extends JFrame {
 				btnPaseo.setBounds(20, 30, 608, 60);
 				panel10.add(btnPaseo);
 				
-				JButton btnTele = new JButton("I would like to watch something on the tv");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTele = new JButton("I would like to watch something on the tv");	 //Igual que en el botón "Tengo hambre"
 				btnTele.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3217,7 +3217,7 @@ public class Main_1 extends JFrame {
 				btnTele.setBounds(20, 100, 608, 60);
 				panel10.add(btnTele);
 				
-				JButton btnComputadora = new JButton("I would like to watch something on the pc");			 //Igual que en el botón "Tengo hambre"
+				JButton btnComputadora = new JButton("I would like to watch something on the pc");	 //Igual que en el botón "Tengo hambre"
 				btnComputadora.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3234,7 +3234,7 @@ public class Main_1 extends JFrame {
 				btnComputadora.setBounds(20, 170, 608, 60);
 				panel10.add(btnComputadora);
 				
-				JButton btnTablet = new JButton("I would like to watch something on the tablet");			 //Igual que en el botón "Tengo hambre"
+				JButton btnTablet = new JButton("I would like to watch something on the tablet");   //Igual que en el botón "Tengo hambre"
 				btnTablet.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3250,7 +3250,7 @@ public class Main_1 extends JFrame {
 				btnTablet.setBounds(20, 240, 608, 60);
 				panel10.add(btnTablet);
 				
-				JButton btnRadio = new JButton("I would like to listen to the radio");		 //Igual que en el botón "Tengo hambre"
+				JButton btnRadio = new JButton("I would like to listen to the radio");	//Igual que en el botón "Tengo hambre"
 				btnRadio.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3266,7 +3266,7 @@ public class Main_1 extends JFrame {
 				btnRadio.setBounds(648, 30, 608, 60);
 				panel10.add(btnRadio);
 				
-				JButton btnMusica = new JButton("I would like to listen to music");			 //Igual que en el botón "Tengo hambre"
+				JButton btnMusica = new JButton("I would like to listen to music");	 //Igual que en el botón "Tengo hambre"
 				btnMusica.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3282,7 +3282,7 @@ public class Main_1 extends JFrame {
 				btnMusica.setBounds(648, 100, 608, 60);
 				panel10.add(btnMusica);
 				
-				JButton btnAudiolibro = new JButton("I would like to listen to an audiobook");		 //Igual que en el botón "Tengo hambre"
+				JButton btnAudiolibro = new JButton("I would like to listen to an audiobook");	//Igual que en el botón "Tengo hambre"
 				btnAudiolibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3298,7 +3298,7 @@ public class Main_1 extends JFrame {
 				btnAudiolibro.setBounds(648, 170, 608, 60);
 				panel10.add(btnAudiolibro);
 				
-				JButton btnLibro = new JButton("I would like you to read me a book");			 //Igual que en el botón "Tengo hambre"
+				JButton btnLibro = new JButton("I would like you to read me a book");	 //Igual que en el botón "Tengo hambre"
 				btnLibro.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3314,7 +3314,7 @@ public class Main_1 extends JFrame {
 				btnLibro.setBounds(648, 240, 608, 60);
 				panel10.add(btnLibro);
 				
-				JButton btnRopa = new JButton("I would like to change my clothes");			 //Igual que en el botón "Tengo hambre"
+				JButton btnRopa = new JButton("I would like to change my clothes");	  //Igual que en el botón "Tengo hambre"
 				btnRopa.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3330,7 +3330,7 @@ public class Main_1 extends JFrame {
 				btnRopa.setBounds(1276, 30, 608, 60);
 				panel10.add(btnRopa);
 				
-				JButton btnCine = new JButton("I would like to go to the cinema");			 //Igual que en el botón "Tengo hambre"
+				JButton btnCine = new JButton("I would like to go to the cinema");	 //Igual que en el botón "Tengo hambre"
 				btnCine.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3346,7 +3346,7 @@ public class Main_1 extends JFrame {
 				btnCine.setBounds(1276, 100, 608, 60);
 				panel10.add(btnCine);
 				
-				JButton btnSalirAComer = new JButton("I would like to go out to eat");		 //Igual que en el botón "Tengo hambre"
+				JButton btnSalirAComer = new JButton("I would like to go out to eat");	//Igual que en el botón "Tengo hambre"
 				btnSalirAComer.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3362,7 +3362,7 @@ public class Main_1 extends JFrame {
 				btnSalirAComer.setBounds(1276, 170, 608, 60);
 				panel10.add(btnSalirAComer);
 					
-				JButton btnJugar = new JButton("I would like to play something");		 //Igual que en el botón "Tengo hambre"
+				JButton btnJugar = new JButton("I would like to play something");	//Igual que en el botón "Tengo hambre"
 				btnJugar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3387,7 +3387,7 @@ public class Main_1 extends JFrame {
 				panel12.setBounds(0, 911, 947, 120);
 				contentPane.add(panel12);
 				
-				JButton btnConfiguracion = new JButton("Configuration");		//Botón que abre la ventana Configuración
+				JButton btnConfiguracion = new JButton("Configuration");	//Botón que abre la ventana Configuración
 				btnConfiguracion.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Configuracion con = new Configuracion();
@@ -3408,7 +3408,7 @@ public class Main_1 extends JFrame {
 				panel14.setBounds(957, 911, 947, 120);
 				contentPane.add(panel14);
 				
-				JButton btnEmergencias = new JButton("Emergencies");			//Botón que abre la ventana emergencias
+				JButton btnEmergencias = new JButton("Emergencies");	//Botón que abre la ventana emergencias
 				btnEmergencias.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Emergencias em = new Emergencias();
@@ -3524,7 +3524,7 @@ public class Main_1 extends JFrame {
 		JButton btnHambre = new JButton("Tengo hambre");			//Botón text-to-speech
 		btnHambre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");			//Setea las propiedades de la vzo
+				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");	//Setea las propiedades de la voz
 				Voice voice;
 		        VoiceManager voiceManager = VoiceManager.getInstance();		//Prepara la instancia de voz
 		        voice = voiceManager.getVoice("kevin16");				 //Utiliza la voz "kevn16"
@@ -3569,7 +3569,7 @@ public class Main_1 extends JFrame {
 		btnSuenio.setBounds(10, 104, 240, 30);
 		panel3.add(btnSuenio);
 		
-		JButton btnDientes = new JButton("Quiero lavarme los dientes");			 //Igual que en el botón "Tengo hambre"
+		JButton btnDientes = new JButton("Quiero lavarme los dientes");		 //Igual que en el botón "Tengo hambre"
 		btnDientes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4003,7 +4003,7 @@ public class Main_1 extends JFrame {
 				dispose();
 			}
 		});
-		btnEmergencias.addActionListener(new ActionListener() {			//Botón que abre la veentana Emergencias
+		btnEmergencias.addActionListener(new ActionListener() {			//Botón que abre la ventana Emergencias
 			public void actionPerformed(ActionEvent e) {
 				Emergencias em = new Emergencias();
 				em.setVisible(true);

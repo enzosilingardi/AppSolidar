@@ -105,7 +105,7 @@ public class Configuracion extends JFrame {
 		btnTamanio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "1";                                                  //Coloca la variable tamanio como "1"
-				lblTamanioSeleccionado.setText("Seleccionado: 800 x 600");      //Cambia el texto del label para indicar que el tamaño selecciondao es 800 x 600
+				lblTamanioSeleccionado.setText("Seleccionado: 800 x 600");      //Cambia el texto del label para indicar que el tamaño seleccionado es 800 x 600
 			}
 		});
 		btnTamanio1.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
@@ -116,18 +116,18 @@ public class Configuracion extends JFrame {
 		btnTamanio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "2";                                                  //Coloca la variable tamanio como "2"
-				lblTamanioSeleccionado.setText("Seleccionado: 1280 x 960");      //Cambia el texto del label para indicar que el tamaño selecciondao es 1280 x 960
+				lblTamanioSeleccionado.setText("Seleccionado: 1280 x 960");      //Cambia el texto del label para indicar que el tamaño seleccionado es 1280 x 960
 			}
 		});
 		btnTamanio2.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
-		JButton btnTamanio3 = new JButton("1920 x 1080");        //Botón que selecciona el primer tamaño (1920 x 1080)
+		JButton btnTamanio3 = new JButton("1920 x 1080");        //Botón que selecciona el tercer tamaño (1920 x 1080)
 		btnTamanio3.setBounds(410, 25, 150, 40);
 		panel_3.add(btnTamanio3);
 		btnTamanio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "3";                                                       //Coloca la variable tamanio como "3"
-				lblTamanioSeleccionado.setText("Seleccionado: 1920 x 1080");         //Cambia el texto del label para indicar que el tamaño selecciondao es 1920 x 1080
+				lblTamanioSeleccionado.setText("Seleccionado: 1920 x 1080");         //Cambia el texto del label para indicar que el tamaño seleccionado es 1920 x 1080
 			}
 		});
 		btnTamanio3.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
