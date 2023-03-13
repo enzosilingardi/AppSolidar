@@ -26,6 +26,9 @@ import javax.swing.border.MatteBorder;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.UIManager;
 import java.awt.Cursor;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
+import java.awt.Dimension;
 
 public class Main_1 extends JFrame {
 
@@ -3433,6 +3436,7 @@ public class Main_1 extends JFrame {
 	}
 
 	public Main_1() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Main_1.class.getResource("/Images/solidar_icono.png")));
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
@@ -3443,100 +3447,106 @@ public class Main_1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel1 = new JPanel();
-		panel1.setBackground(new Color(0, 153, 204));
+		panel1.setBackground(new Color(0, 0, 139));
 		panel1.setBounds(0, 0, 525, 47);
 		contentPane.add(panel1);
 		
 		JPanel panel2 = new JPanel();
-		panel2.setBackground(new Color(0, 153, 204));
+		panel2.setBackground(new Color(0, 0, 139));
 		panel2.setBorder(null);
 		panel2.setForeground(new Color(255, 255, 255));
 		panel2.setBounds(525, 0, 261, 73);
 		contentPane.add(panel2);
+		panel2.setLayout(null);
+		
+		JLabel lblLogo = new JLabel("");
+		lblLogo.setIcon(new ImageIcon(Main_1.class.getResource("/Images/solidar_logo_reducido_Main_1.png")));
+		lblLogo.setBounds(0, 0, 261, 73);
+		panel2.add(lblLogo);
 		
 		JPanel panel3 = new JPanel();
 		panel3.setForeground(new Color(51, 153, 255));
-		panel3.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel3.setBackground(new Color(204, 255, 255));
+		panel3.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel3.setBackground(new Color(135, 206, 250));
 		panel3.setBounds(0, 47, 515, 144);
 		contentPane.add(panel3);
 		panel3.setLayout(null);
 		
 		JPanel panel4 = new JPanel();
 		panel4.setForeground(new Color(51, 153, 255));
-		panel4.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel4.setBackground(new Color(204, 255, 255));
+		panel4.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel4.setBackground(new Color(135, 206, 250));
 		panel4.setBounds(525, 73, 261, 42);
 		contentPane.add(panel4);
 		panel4.setLayout(null);
 		
 		JPanel panel5 = new JPanel();
-		panel5.setBackground(new Color(0, 153, 204));
+		panel5.setBackground(new Color(65, 105, 225));
 		panel5.setBounds(0, 191, 515, 10);
 		contentPane.add(panel5);
 		
 		JPanel panel6 = new JPanel();
-		panel6.setBackground(new Color(0, 153, 204));
+		panel6.setBackground(new Color(65, 105, 225));
 		panel6.setBounds(525, 115, 261, 10);
 		contentPane.add(panel6);
 		
 		JPanel panel7 = new JPanel();
 		panel7.setForeground(new Color(51, 153, 255));
-		panel7.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel7.setBackground(new Color(204, 255, 255));
+		panel7.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel7.setBackground(new Color(135, 206, 250));
 		panel7.setBounds(0, 201, 515, 113);
 		contentPane.add(panel7);
 		panel7.setLayout(null);
 		
 		JPanel panel8 = new JPanel();
 		panel8.setForeground(new Color(51, 153, 255));
-		panel8.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel8.setBackground(new Color(204, 255, 255));
+		panel8.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel8.setBackground(new Color(135, 206, 250));
 		panel8.setBounds(525, 125, 261, 189);
 		contentPane.add(panel8);
 		panel8.setLayout(null);
 		
 		JPanel panel9 = new JPanel();
-		panel9.setBackground(new Color(0, 153, 204));
+		panel9.setBackground(new Color(65, 105, 225));
 		panel9.setBounds(0, 314, 786, 10);
 		contentPane.add(panel9);
 		
 		JPanel panel10 = new JPanel();
 		panel10.setForeground(new Color(51, 153, 255));
-		panel10.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel10.setBackground(new Color(204, 255, 255));
+		panel10.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel10.setBackground(new Color(135, 206, 250));
 		panel10.setBounds(0, 324, 786, 172);
 		contentPane.add(panel10);
 		panel10.setLayout(null);
 		
 		JPanel panel11 = new JPanel();
-		panel11.setBackground(new Color(0, 153, 204));
+		panel11.setBackground(new Color(65, 105, 225));
 		panel11.setBounds(0, 496, 786, 10);
 		contentPane.add(panel11);
 
 		JPanel panel12 = new JPanel();
 		panel12.setForeground(new Color(51, 153, 255));
-		panel12.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel12.setBackground(new Color(204, 255, 255));
+		panel12.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel12.setBackground(new Color(135, 206, 250));
 		panel12.setBounds(0, 506, 388, 46);
 		contentPane.add(panel12);
 		panel12.setLayout(null);
 
 		JPanel panel13 = new JPanel();
-		panel13.setBackground(new Color(0, 153, 204));
+		panel13.setBackground(new Color(65, 105, 225));
 		panel13.setBounds(388, 506, 10, 46);
 		contentPane.add(panel13);
 		
 		JPanel panel14 = new JPanel();
 		panel14.setForeground(new Color(51, 153, 255));
-		panel14.setBorder(new LineBorder(new Color(51, 153, 255), 3));
-		panel14.setBackground(new Color(204, 255, 255));
+		panel14.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel14.setBackground(new Color(135, 206, 250));
 		panel14.setBounds(398, 506, 388, 46);
 		contentPane.add(panel14);
 		panel14.setLayout(null);
 		
 		JPanel panel15 = new JPanel();
-		panel15.setBackground(new Color(0, 153, 204));
+		panel15.setBackground(new Color(65, 105, 225));
 		panel15.setBounds(0, 552, 786, 9);
 		contentPane.add(panel15);
 		
@@ -3547,8 +3557,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnHambre = new JButton("Tengo hambre");
 		btnHambre.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnHambre.setBackground(new Color(255, 255, 255));
-		btnHambre.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnHambre.setBackground(new Color(240, 248, 255));
+		btnHambre.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnHambre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");	//Setea las propiedades de la voz
@@ -3566,8 +3576,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnSed = new JButton("Tengo sed");
 		btnSed.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnSed.setBackground(new Color(255, 255, 255));
-		btnSed.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnSed.setBackground(new Color(240, 248, 255));
+		btnSed.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnSed.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3585,8 +3595,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnSuenio = new JButton("Tengo sueño");
 		btnSuenio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnSuenio.setBackground(new Color(255, 255, 255));
-		btnSuenio.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnSuenio.setBackground(new Color(240, 248, 255));
+		btnSuenio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnSuenio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3604,8 +3614,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnDientes = new JButton("Quiero lavarme los dientes");
 		btnDientes.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnDientes.setBackground(new Color(255, 255, 255));
-		btnDientes.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnDientes.setBackground(new Color(240, 248, 255));
+		btnDientes.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnDientes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3623,8 +3633,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnBanio = new JButton("Quiero ir al baño");
 		btnBanio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnBanio.setBackground(new Color(255, 255, 255));
-		btnBanio.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnBanio.setBackground(new Color(240, 248, 255));
+		btnBanio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnBanio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3642,8 +3652,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnBaniar = new JButton("Quiero bañarme");
 		btnBaniar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnBaniar.setBackground(new Color(255, 255, 255));
-		btnBaniar.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnBaniar.setBackground(new Color(240, 248, 255));
+		btnBaniar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnBaniar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3661,8 +3671,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnEmergencias = new JButton("Emergencias");
 		btnEmergencias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnEmergencias.setBackground(new Color(255, 255, 255));
-		btnEmergencias.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnEmergencias.setBackground(new Color(240, 248, 255));
+		btnEmergencias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnEmergencias.setBounds(123, 8, 140, 30);
 		panel14.add(btnEmergencias);
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
@@ -3674,8 +3684,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnPaseo = new JButton("Quisiera dar un paseo");
 		btnPaseo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnPaseo.setBackground(new Color(255, 255, 255));
-		btnPaseo.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnPaseo.setBackground(new Color(240, 248, 255));
+		btnPaseo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnPaseo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3693,8 +3703,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnTele = new JButton("Quisiera ver algo en la tele");
 		btnTele.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnTele.setBackground(new Color(255, 255, 255));
-		btnTele.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnTele.setBackground(new Color(240, 248, 255));
+		btnTele.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnTele.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3713,8 +3723,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnComputadora = new JButton("Quisiera ver algo en la computadora");
 		btnComputadora.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnComputadora.setBackground(new Color(255, 255, 255));
-		btnComputadora.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnComputadora.setBackground(new Color(240, 248, 255));
+		btnComputadora.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnComputadora.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3733,8 +3743,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnTablet = new JButton("Quisiera ver algo en la tablet");
 		btnTablet.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnTablet.setBackground(new Color(255, 255, 255));
-		btnTablet.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnTablet.setBackground(new Color(240, 248, 255));
+		btnTablet.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnTablet.addActionListener(new ActionListener() {	
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3752,8 +3762,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnRadio = new JButton("Quisiera escuchar radio");
 		btnRadio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnRadio.setBackground(new Color(255, 255, 255));
-		btnRadio.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnRadio.setBackground(new Color(240, 248, 255));
+		btnRadio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnRadio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3771,8 +3781,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnMusica = new JButton("Quisiera escuchar música");
 		btnMusica.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnMusica.setBackground(new Color(255, 255, 255));
-		btnMusica.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnMusica.setBackground(new Color(240, 248, 255));
+		btnMusica.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnMusica.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3790,8 +3800,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnAudiolibro = new JButton("Quisiera escuchar un audiolibro");
 		btnAudiolibro.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnAudiolibro.setBackground(new Color(255, 255, 255));
-		btnAudiolibro.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnAudiolibro.setBackground(new Color(240, 248, 255));
+		btnAudiolibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnAudiolibro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3809,8 +3819,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnLibro = new JButton("Quisiera que me lean un libro");
 		btnLibro.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnLibro.setBackground(new Color(255, 255, 255));
-		btnLibro.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnLibro.setBackground(new Color(240, 248, 255));
+		btnLibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnLibro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3828,8 +3838,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnRopa = new JButton("Quisiera cambiarme de ropa");
 		btnRopa.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnRopa.setBackground(new Color(255, 255, 255));
-		btnRopa.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnRopa.setBackground(new Color(240, 248, 255));
+		btnRopa.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnRopa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3847,8 +3857,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnCine = new JButton("Quisiera ir al cine");
 		btnCine.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnCine.setBackground(new Color(255, 255, 255));
-		btnCine.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnCine.setBackground(new Color(240, 248, 255));
+		btnCine.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnCine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3866,8 +3876,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnSalirAComer = new JButton("Quisiera salir a comer");
 		btnSalirAComer.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnSalirAComer.setBackground(new Color(255, 255, 255));
-		btnSalirAComer.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnSalirAComer.setBackground(new Color(240, 248, 255));
+		btnSalirAComer.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnSalirAComer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3885,8 +3895,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnJugar = new JButton("Quisiera jugar a algo");
 		btnJugar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnJugar.setBackground(new Color(255, 255, 255));
-		btnJugar.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnJugar.setBackground(new Color(240, 248, 255));
+		btnJugar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnJugar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3904,8 +3914,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnConfiguracion = new JButton("Configuración");
 		btnConfiguracion.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnConfiguracion.setBackground(new Color(255, 255, 255));
-		btnConfiguracion.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnConfiguracion.setBackground(new Color(240, 248, 255));
+		btnConfiguracion.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnConfiguracion.setBounds(123, 8, 140, 30);
 		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		panel12.add(btnConfiguracion);
@@ -3917,8 +3927,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnSi = new JButton("Sí");
 		btnSi.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnSi.setBackground(new Color(255, 255, 255));
-		btnSi.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnSi.setBackground(new Color(240, 248, 255));
+		btnSi.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnSi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3936,8 +3946,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnNo = new JButton("No");
 		btnNo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnNo.setBackground(new Color(255, 255, 255));
-		btnNo.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnNo.setBackground(new Color(240, 248, 255));
+		btnNo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnNo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3955,8 +3965,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnNoSe = new JButton("No sé");
 		btnNoSe.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnNoSe.setBackground(new Color(255, 255, 255));
-		btnNoSe.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnNoSe.setBackground(new Color(240, 248, 255));
+		btnNoSe.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnNoSe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3974,8 +3984,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnTalVez = new JButton("Tal vez");
 		btnTalVez.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnTalVez.setBackground(new Color(255, 255, 255));
-		btnTalVez.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnTalVez.setBackground(new Color(240, 248, 255));
+		btnTalVez.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnTalVez.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -3993,8 +4003,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnGracias = new JButton("Gracias!");
 		btnGracias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnGracias.setBackground(new Color(255, 255, 255));
-		btnGracias.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnGracias.setBackground(new Color(240, 248, 255));
+		btnGracias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnGracias.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4017,8 +4027,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnTengoFrio = new JButton("Tengo frio");
 		btnTengoFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnTengoFrio.setBackground(new Color(255, 255, 255));
-		btnTengoFrio.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnTengoFrio.setBackground(new Color(240, 248, 255));
+		btnTengoFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnTengoFrio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4036,8 +4046,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnTengoCalor = new JButton("Tengo calor");
 		btnTengoCalor.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnTengoCalor.setBackground(new Color(255, 255, 255));
-		btnTengoCalor.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnTengoCalor.setBackground(new Color(240, 248, 255));
+		btnTengoCalor.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnTengoCalor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4055,8 +4065,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnEstaFrio = new JButton("Está frio");
 		btnEstaFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnEstaFrio.setBackground(new Color(255, 255, 255));
-		btnEstaFrio.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnEstaFrio.setBackground(new Color(240, 248, 255));
+		btnEstaFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnEstaFrio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4074,8 +4084,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnEstaCaliente = new JButton("Está caliente");
 		btnEstaCaliente.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnEstaCaliente.setBackground(new Color(255, 255, 255));
-		btnEstaCaliente.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnEstaCaliente.setBackground(new Color(240, 248, 255));
+		btnEstaCaliente.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnEstaCaliente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -4093,8 +4103,8 @@ public class Main_1 extends JFrame {
 		
 		JButton btnNewButton = new JButton("Teclado en pantalla");
 		btnNewButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		btnNewButton.setBackground(new Color(255, 255, 255));
-		btnNewButton.setBorder(new LineBorder(new Color(153, 204, 255), 3, true));
+		btnNewButton.setBackground(new Color(240, 248, 255));
+		btnNewButton.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		        try {
@@ -4111,7 +4121,7 @@ public class Main_1 extends JFrame {
 		panel4.add(btnNewButton);
 		
 		JPanel panel16 = new JPanel();
-		panel16.setBackground(new Color(0, 153, 204));
+		panel16.setBackground(new Color(65, 105, 225));
 		panel16.setBounds(515, 47, 10, 267);
 		contentPane.add(panel16);
 		
