@@ -56,7 +56,8 @@ public class Main_1 extends JFrame {
 	public Main_1(String tamanio, String idioma) {        // Constructor por parametro que recibe el tamaño y el idioma que se quiere usar para construir la ventana
 		
 		if (tamanio.equals("1")) {                        //If que verifica si el tamaño seleccionado es el primero
-		
+		//Setea el icono de la pantalla
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Main_1.class.getResource("/Images/solidar_icono.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
 		contentPane = new JPanel();
@@ -66,71 +67,113 @@ public class Main_1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel1 = new JPanel();
-		panel1.setBounds(0, 0, 520, 47);
+		panel1.setBackground(new Color(0, 0, 139));
+		panel1.setBounds(0, 0, 525, 47);
 		contentPane.add(panel1);
 		
 		JPanel panel2 = new JPanel();
-		panel2.setBounds(520, 0, 266, 73);
+		panel2.setBackground(new Color(0, 0, 139));
+		panel2.setBorder(null);
+		panel2.setForeground(new Color(255, 255, 255));
+		panel2.setBounds(525, 0, 261, 73);
 		contentPane.add(panel2);
+		panel2.setLayout(null);
+		
+		JLabel lblLogo = new JLabel("");
+		lblLogo.setIcon(new ImageIcon(Main_1.class.getResource("/Images/solidar_logo_reducido_Main_1.png")));
+		lblLogo.setBounds(0, 0, 261, 73);
+		panel2.add(lblLogo);
 		
 		JPanel panel3 = new JPanel();
-		panel3.setBounds(0, 47, 520, 144);
+		panel3.setForeground(new Color(51, 153, 255));
+		panel3.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel3.setBackground(new Color(135, 206, 250));
+		panel3.setBounds(0, 47, 515, 144);
 		contentPane.add(panel3);
 		panel3.setLayout(null);
 		
 		JPanel panel4 = new JPanel();
-		panel4.setBounds(520, 73, 266, 42);
+		panel4.setForeground(new Color(51, 153, 255));
+		panel4.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel4.setBackground(new Color(135, 206, 250));
+		panel4.setBounds(525, 73, 261, 42);
 		contentPane.add(panel4);
 		panel4.setLayout(null);
 		
 		JPanel panel5 = new JPanel();
-		panel5.setBounds(0, 191, 520, 10);
+		panel5.setBackground(new Color(65, 105, 225));
+		panel5.setBounds(0, 191, 515, 10);
 		contentPane.add(panel5);
 		
 		JPanel panel6 = new JPanel();
-		panel6.setBounds(520, 115, 266, 10);
+		panel6.setBackground(new Color(65, 105, 225));
+		panel6.setBounds(525, 115, 261, 10);
 		contentPane.add(panel6);
 		
 		JPanel panel7 = new JPanel();
-		panel7.setBounds(0, 201, 520, 113);
+		panel7.setForeground(new Color(51, 153, 255));
+		panel7.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel7.setBackground(new Color(135, 206, 250));
+		panel7.setBounds(0, 201, 515, 113);
 		contentPane.add(panel7);
 		panel7.setLayout(null);
 		
 		JPanel panel8 = new JPanel();
-		panel8.setBounds(520, 125, 266, 189);
+		panel8.setForeground(new Color(51, 153, 255));
+		panel8.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel8.setBackground(new Color(135, 206, 250));
+		panel8.setBounds(525, 125, 261, 189);
 		contentPane.add(panel8);
 		panel8.setLayout(null);
 		
 		JPanel panel9 = new JPanel();
+		panel9.setBackground(new Color(65, 105, 225));
 		panel9.setBounds(0, 314, 786, 10);
 		contentPane.add(panel9);
 		
 		JPanel panel10 = new JPanel();
+		panel10.setForeground(new Color(51, 153, 255));
+		panel10.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel10.setBackground(new Color(135, 206, 250));
 		panel10.setBounds(0, 324, 786, 172);
 		contentPane.add(panel10);
 		panel10.setLayout(null);
 		
 		JPanel panel11 = new JPanel();
+		panel11.setBackground(new Color(65, 105, 225));
 		panel11.setBounds(0, 496, 786, 10);
 		contentPane.add(panel11);
 
 		JPanel panel12 = new JPanel();
+		panel12.setForeground(new Color(51, 153, 255));
+		panel12.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel12.setBackground(new Color(135, 206, 250));
 		panel12.setBounds(0, 506, 388, 46);
 		contentPane.add(panel12);
 		panel12.setLayout(null);
 
 		JPanel panel13 = new JPanel();
+		panel13.setBackground(new Color(65, 105, 225));
 		panel13.setBounds(388, 506, 10, 46);
 		contentPane.add(panel13);
 		
 		JPanel panel14 = new JPanel();
+		panel14.setForeground(new Color(51, 153, 255));
+		panel14.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel14.setBackground(new Color(135, 206, 250));
 		panel14.setBounds(398, 506, 388, 46);
 		contentPane.add(panel14);
 		panel14.setLayout(null);
 		
 		JPanel panel15 = new JPanel();
+		panel15.setBackground(new Color(65, 105, 225));
 		panel15.setBounds(0, 552, 786, 9);
 		contentPane.add(panel15);
+		
+		JPanel panel16 = new JPanel();
+		panel16.setBackground(new Color(65, 105, 225));
+		panel16.setBounds(515, 47, 10, 267);
+		contentPane.add(panel16);
 		
 		if (idioma.equals("esp")) {            // If que verifica si el idioma seleccionado es español
 		
@@ -151,6 +194,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnHambre.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnHambre.setBackground(new Color(240, 248, 255));
+		btnHambre.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnHambre.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnHambre.setBounds(15, 32, 240, 30);
 		panel3.add(btnHambre);
@@ -167,6 +214,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnSed.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnSed.setBackground(new Color(240, 248, 255));
+		btnSed.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnSed.setFont(new Font("Roboto Medium", Font.PLAIN, 14));     
 		btnSed.setBounds(15, 68, 240, 30);
 		panel3.add(btnSed);
@@ -182,7 +233,10 @@ public class Main_1 extends JFrame {
 		        voice.speak("tehng-goh sweh-nyoh");
 		        voice.deallocate();
 			}
-		});
+		});		
+		btnSuenio.setBackground(new Color(240, 248, 255));
+		btnSuenio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnSuenio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnSuenio.setBounds(15, 104, 240, 30);
 		panel3.add(btnSuenio);
@@ -199,6 +253,9 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnDientes.setBackground(new Color(240, 248, 255));
+		btnDientes.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnDientes.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnDientes.setBounds(265, 32, 240, 30);
 		panel3.add(btnDientes);
@@ -215,6 +272,9 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnBanio.setBackground(new Color(240, 248, 255));
+		btnBanio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnBanio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnBanio.setBounds(265, 68, 240, 30);
 		panel3.add(btnBanio);
@@ -231,11 +291,17 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnBaniar.setBackground(new Color(240, 248, 255));
+		btnBaniar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnBaniar.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnBaniar.setBounds(265, 104, 240, 30);
 		panel3.add(btnBaniar);
 		
 		JButton btnEmergencias = new JButton("Emergencias");				 //Igual que en el botón "Tengo hambre"
+		btnEmergencias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnEmergencias.setBackground(new Color(240, 248, 255));
+		btnEmergencias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
 		btnEmergencias.setBounds(123, 8, 140, 30);
 		panel14.add(btnEmergencias);
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
@@ -257,6 +323,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnPaseo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnPaseo.setBackground(new Color(240, 248, 255));
+		btnPaseo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnPaseo.setBounds(16, 23, 240, 30);
 		panel10.add(btnPaseo);
@@ -274,6 +344,10 @@ public class Main_1 extends JFrame {
 
 			}
 		});
+		btnTele.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTele.setBackground(new Color(240, 248, 255));
+		btnTele.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnTele.setBounds(16, 59, 240, 30);
 		panel10.add(btnTele);
@@ -291,6 +365,10 @@ public class Main_1 extends JFrame {
 
 			}
 		});
+		btnComputadora.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnComputadora.setBackground(new Color(240, 248, 255));
+		btnComputadora.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnComputadora.setBounds(16, 95, 240, 30);
 		panel10.add(btnComputadora);
@@ -307,6 +385,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnTablet.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTablet.setBackground(new Color(240, 248, 255));
+		btnTablet.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnTablet.setBounds(16, 131, 240, 30);
 		panel10.add(btnTablet);
@@ -323,6 +405,9 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnRadio.setBackground(new Color(240, 248, 255));
+		btnRadio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnRadio.setBounds(273, 23, 240, 30);
 		panel10.add(btnRadio);
@@ -338,7 +423,10 @@ public class Main_1 extends JFrame {
 		        voice.speak("kee-see-eh-rah ehs-koo-chahr moo-see-kah");
 		        voice.deallocate();
 			}
-		});
+		});		
+		btnMusica.setBackground(new Color(240, 248, 255));
+		btnMusica.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnMusica.setBounds(273, 59, 240, 30);
 		panel10.add(btnMusica);
@@ -355,6 +443,9 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnAudiolibro.setBackground(new Color(240, 248, 255));
+		btnAudiolibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnAudiolibro.setBounds(273, 95, 240, 30);
 		panel10.add(btnAudiolibro);
@@ -371,6 +462,9 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnLibro.setBackground(new Color(240, 248, 255));
+		btnLibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnLibro.setBounds(273, 131, 240, 30);
 		panel10.add(btnLibro);
@@ -387,6 +481,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnRopa.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnRopa.setBackground(new Color(240, 248, 255));
+		btnRopa.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnRopa.setBounds(530, 23, 240, 30);
 		panel10.add(btnRopa);
@@ -403,6 +501,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnCine.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnCine.setBackground(new Color(240, 248, 255));
+		btnCine.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnCine.setBounds(530, 59, 240, 30);
 		panel10.add(btnCine);
@@ -419,6 +521,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnSalirAComer.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnSalirAComer.setBackground(new Color(240, 248, 255));
+		btnSalirAComer.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnSalirAComer.setBounds(530, 95, 240, 30);
 		panel10.add(btnSalirAComer);
@@ -435,11 +541,19 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnJugar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnJugar.setBackground(new Color(240, 248, 255));
+		btnJugar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 12));
 		btnJugar.setBounds(530, 131, 240, 30);
 		panel10.add(btnJugar);
 		
-		JButton btnConfiguracion = new JButton("Configuración");                   
+		JButton btnConfiguracion = new JButton("Configuración");
+		btnConfiguracion.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnConfiguracion.setBackground(new Color(240, 248, 255));
+		btnConfiguracion.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnConfiguracion.setBounds(123, 8, 140, 30);
 		btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		panel12.add(btnConfiguracion);
@@ -461,6 +575,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnSi.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnSi.setBackground(new Color(240, 248, 255));
+		btnSi.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnSi.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnSi.setBounds(13, 30, 89, 70);
 		panel7.add(btnSi);
@@ -477,6 +595,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnNo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnNo.setBackground(new Color(240, 248, 255));
+		btnNo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnNo.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnNo.setBounds(114, 30, 89, 70);
 		panel7.add(btnNo);
@@ -493,6 +615,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnNoSe.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnNoSe.setBackground(new Color(240, 248, 255));
+		btnNoSe.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnNoSe.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnNoSe.setBounds(215, 30, 89, 70);
 		panel7.add(btnNoSe);
@@ -509,6 +635,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnTalVez.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTalVez.setBackground(new Color(240, 248, 255));
+		btnTalVez.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnTalVez.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnTalVez.setBounds(316, 30, 89, 70);
 		panel7.add(btnTalVez);
@@ -525,6 +655,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnGracias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnGracias.setBackground(new Color(240, 248, 255));
+		btnGracias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnGracias.setBounds(417, 30, 89, 70);
 		panel7.add(btnGracias);
 		btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
@@ -546,6 +680,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnTengoFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTengoFrio.setBackground(new Color(240, 248, 255));
+		btnTengoFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnTengoFrio.setBounds(10, 30, 118, 70);
 		panel8.add(btnTengoFrio);
@@ -562,6 +700,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnTengoCalor.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTengoCalor.setBackground(new Color(240, 248, 255));
+		btnTengoCalor.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnTengoCalor.setBounds(133, 30, 123, 70);
 		panel8.add(btnTengoCalor);
@@ -578,6 +720,10 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnEstaFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnEstaFrio.setBackground(new Color(240, 248, 255));
+		btnEstaFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnEstaFrio.setBounds(10, 109, 118, 70);
 		panel8.add(btnEstaFrio);
@@ -594,12 +740,16 @@ public class Main_1 extends JFrame {
 		        voice.deallocate();
 			}
 		});
+		btnEstaCaliente.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnEstaCaliente.setBackground(new Color(240, 248, 255));
+		btnEstaCaliente.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnEstaCaliente.setBounds(133, 109, 123, 70);
 		panel8.add(btnEstaCaliente);
 		
-		JButton btnNewButton = new JButton("Teclado en pantalla");        //Botón que abre el teclado en pantalla
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnTecladoEnPantalla = new JButton("Teclado en pantalla");        //Botón que abre el teclado en pantalla
+		btnTecladoEnPantalla.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		        try {
 		        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");    //Envía a cmd el comando para ejecutar el teclado en pantalla
@@ -610,9 +760,13 @@ public class Main_1 extends JFrame {
 
 			}
 		});
-		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		btnNewButton.setBounds(45, 6, 176, 30);
-		panel4.add(btnNewButton);
+		btnTecladoEnPantalla.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		btnTecladoEnPantalla.setBackground(new Color(240, 248, 255));
+		btnTecladoEnPantalla.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
+		btnTecladoEnPantalla.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		btnTecladoEnPantalla.setBounds(45, 6, 176, 30);
+		panel4.add(btnTecladoEnPantalla);
 		
 		btnConfiguracion.addActionListener(new ActionListener() {    //Botón que abre la ventana de configuración
 			public void actionPerformed(ActionEvent e) {
@@ -649,6 +803,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnHambre.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnHambre.setBackground(new Color(240, 248, 255));
+			btnHambre.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnHambre.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnHambre.setBounds(15, 32, 240, 30);
 			panel3.add(btnHambre);
@@ -665,6 +823,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnSed.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnSed.setBackground(new Color(240, 248, 255));
+			btnSed.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnSed.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnSed.setBounds(15, 68, 240, 30);
 			panel3.add(btnSed);
@@ -681,6 +843,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnSuenio.setBackground(new Color(240, 248, 255));
+			btnSuenio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnSuenio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnSuenio.setBounds(15, 104, 240, 30);
 			panel3.add(btnSuenio);
@@ -697,6 +862,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnDientes.setBackground(new Color(240, 248, 255));
+			btnDientes.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnDientes.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnDientes.setBounds(265, 32, 240, 30);
 			panel3.add(btnDientes);
@@ -713,6 +881,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnBanio.setBackground(new Color(240, 248, 255));
+			btnBanio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnBanio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnBanio.setBounds(265, 68, 240, 30);
 			panel3.add(btnBanio);
@@ -729,11 +900,18 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnBaniar.setBackground(new Color(240, 248, 255));
+			btnBaniar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnBaniar.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnBaniar.setBounds(265, 104, 240, 30);
 			panel3.add(btnBaniar);
 			
 			JButton btnEmergencias = new JButton("Emergencies");
+			btnEmergencias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnEmergencias.setBackground(new Color(240, 248, 255));
+			btnEmergencias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnEmergencias.setBounds(123, 8, 140, 30);
 			panel14.add(btnEmergencias);
 			btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
@@ -755,6 +933,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnPaseo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnPaseo.setBackground(new Color(240, 248, 255));
+			btnPaseo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnPaseo.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnPaseo.setBounds(16, 23, 240, 30);
 			panel10.add(btnPaseo);
@@ -772,6 +954,10 @@ public class Main_1 extends JFrame {
 
 				}
 			});
+			btnTele.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTele.setBackground(new Color(240, 248, 255));
+			btnTele.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnTele.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnTele.setBounds(16, 59, 240, 30);
 			panel10.add(btnTele);
@@ -789,6 +975,10 @@ public class Main_1 extends JFrame {
 
 				}
 			});
+			btnComputadora.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnComputadora.setBackground(new Color(240, 248, 255));
+			btnComputadora.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnComputadora.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnComputadora.setBounds(16, 95, 240, 30);
 			panel10.add(btnComputadora);
@@ -805,6 +995,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnTablet.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTablet.setBackground(new Color(240, 248, 255));
+			btnTablet.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnTablet.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnTablet.setBounds(16, 131, 240, 30);
 			panel10.add(btnTablet);
@@ -821,6 +1015,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnRadio.setBackground(new Color(240, 248, 255));
+			btnRadio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnRadio.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnRadio.setBounds(273, 23, 240, 30);
 			panel10.add(btnRadio);
@@ -837,6 +1034,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnMusica.setBackground(new Color(240, 248, 255));
+			btnMusica.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnMusica.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnMusica.setBounds(273, 59, 240, 30);
 			panel10.add(btnMusica);
@@ -853,6 +1053,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnAudiolibro.setBackground(new Color(240, 248, 255));
+			btnAudiolibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnAudiolibro.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnAudiolibro.setBounds(273, 95, 240, 30);
 			panel10.add(btnAudiolibro);
@@ -869,6 +1072,9 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnLibro.setBackground(new Color(240, 248, 255));
+			btnLibro.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnLibro.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnLibro.setBounds(273, 131, 240, 30);
 			panel10.add(btnLibro);
@@ -885,6 +1091,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnRopa.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnRopa.setBackground(new Color(240, 248, 255));
+			btnRopa.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnRopa.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnRopa.setBounds(530, 23, 240, 30);
 			panel10.add(btnRopa);
@@ -901,6 +1111,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnCine.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnCine.setBackground(new Color(240, 248, 255));
+			btnCine.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnCine.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnCine.setBounds(530, 59, 240, 30);
 			panel10.add(btnCine);
@@ -917,6 +1131,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnSalirAComer.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnSalirAComer.setBackground(new Color(240, 248, 255));
+			btnSalirAComer.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnSalirAComer.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnSalirAComer.setBounds(530, 95, 240, 30);
 			panel10.add(btnSalirAComer);
@@ -933,11 +1151,19 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnJugar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnJugar.setBackground(new Color(240, 248, 255));
+			btnJugar.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnJugar.setFont(new Font("Roboto Medium", Font.PLAIN, 10));
 			btnJugar.setBounds(530, 131, 240, 30);
 			panel10.add(btnJugar);
 			
 			JButton btnConfiguracion = new JButton("Configuration");
+			btnConfiguracion.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnConfiguracion.setBackground(new Color(240, 248, 255));
+			btnConfiguracion.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+			
 			btnConfiguracion.setBounds(123, 8, 140, 30);
 			btnConfiguracion.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 			panel12.add(btnConfiguracion);
@@ -959,6 +1185,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnSi.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnSi.setBackground(new Color(240, 248, 255));
+			btnSi.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnSi.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnSi.setBounds(13, 30, 89, 70);
 			panel7.add(btnSi);
@@ -975,6 +1205,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnNo.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnNo.setBackground(new Color(240, 248, 255));
+			btnNo.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnNo.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnNo.setBounds(114, 30, 89, 70);
 			panel7.add(btnNo);
@@ -991,6 +1225,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnNoSe.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnNoSe.setBackground(new Color(240, 248, 255));
+			btnNoSe.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnNoSe.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnNoSe.setBounds(215, 30, 89, 70);
 			panel7.add(btnNoSe);
@@ -1007,6 +1245,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnTalVez.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTalVez.setBackground(new Color(240, 248, 255));
+			btnTalVez.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnTalVez.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnTalVez.setBounds(316, 30, 89, 70);
 			panel7.add(btnTalVez);
@@ -1023,6 +1265,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnGracias.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnGracias.setBackground(new Color(240, 248, 255));
+			btnGracias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnGracias.setBounds(417, 30, 89, 70);
 			panel7.add(btnGracias);
 			btnGracias.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
@@ -1044,6 +1290,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnTengoFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTengoFrio.setBackground(new Color(240, 248, 255));
+			btnTengoFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnTengoFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnTengoFrio.setBounds(10, 30, 118, 70);
 			panel8.add(btnTengoFrio);
@@ -1060,6 +1310,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnTengoCalor.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTengoCalor.setBackground(new Color(240, 248, 255));
+			btnTengoCalor.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnTengoCalor.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnTengoCalor.setBounds(133, 30, 123, 70);
 			panel8.add(btnTengoCalor);
@@ -1076,6 +1330,10 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnEstaFrio.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnEstaFrio.setBackground(new Color(240, 248, 255));
+			btnEstaFrio.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnEstaFrio.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnEstaFrio.setBounds(10, 109, 118, 70);
 			panel8.add(btnEstaFrio);
@@ -1092,12 +1350,16 @@ public class Main_1 extends JFrame {
 			        voice.deallocate();
 				}
 			});
+			btnEstaCaliente.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnEstaCaliente.setBackground(new Color(240, 248, 255));
+			btnEstaCaliente.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
 			btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 			btnEstaCaliente.setBounds(133, 109, 123, 70);
 			panel8.add(btnEstaCaliente);
 			
-			JButton btnNewButton = new JButton("Virtual Keyboard");  //Botón que abre el teclado en pantalla
-			btnNewButton.addActionListener(new ActionListener() {
+			JButton btnTecladoEnPantalla = new JButton("Virtual Keyboard");  //Botón que abre el teclado en pantalla
+			btnTecladoEnPantalla.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 			        try {
 			        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");   //Envía el comando a cmd para ejecutar el teclado en pantala
@@ -1108,9 +1370,13 @@ public class Main_1 extends JFrame {
 
 				}
 			});
-			btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-			btnNewButton.setBounds(45, 6, 176, 30);
-			panel4.add(btnNewButton);
+			btnTecladoEnPantalla.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+			btnTecladoEnPantalla.setBackground(new Color(240, 248, 255));
+			btnTecladoEnPantalla.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+
+			btnTecladoEnPantalla.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+			btnTecladoEnPantalla.setBounds(45, 6, 176, 30);
+			panel4.add(btnTecladoEnPantalla);
 			
 			btnConfiguracion.addActionListener(new ActionListener() {     //Botón que abre la ventana Configuración
 				public void actionPerformed(ActionEvent e) {
@@ -3550,6 +3816,11 @@ public class Main_1 extends JFrame {
 		panel15.setBounds(0, 552, 786, 9);
 		contentPane.add(panel15);
 		
+		JPanel panel16 = new JPanel();
+		panel16.setBackground(new Color(65, 105, 225));
+		panel16.setBounds(515, 47, 10, 267);
+		contentPane.add(panel16);
+		
 		JLabel lblDialogosHabituales = new JLabel("Dialogos Habituales");
 		lblDialogosHabituales.setFont(new Font("Roboto Medium", Font.BOLD, 16));
 		lblDialogosHabituales.setBounds(10, 0, 160, 24);
@@ -4119,11 +4390,6 @@ public class Main_1 extends JFrame {
 		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
 		btnNewButton.setBounds(42, 6, 176, 30);
 		panel4.add(btnNewButton);
-		
-		JPanel panel16 = new JPanel();
-		panel16.setBackground(new Color(65, 105, 225));
-		panel16.setBounds(515, 47, 10, 267);
-		contentPane.add(panel16);
 		
 		btnConfiguracion.addActionListener(new ActionListener() {			//Botón que abre la ventana Configuración
 			public void actionPerformed(ActionEvent e) {
