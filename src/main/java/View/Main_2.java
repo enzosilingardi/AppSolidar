@@ -80,6 +80,83 @@ public class Main_2 extends JFrame {
 		panel3.setBounds(0, 74, 984, 210);
 		contentPane.add(panel3);
 		
+		JPanel panel4 = new JPanel();
+		panel4.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel4.setBackground(new Color(135, 206, 250));
+		panel4.setLayout(null);
+		panel4.setBounds(994, 130, 350, 60);
+		contentPane.add(panel4);
+
+		JPanel panel5 = new JPanel();
+		panel5.setBackground(new Color(65, 105, 225));
+		panel5.setBounds(0, 284, 984, 10);
+		contentPane.add(panel5);
+		
+		JPanel panel6 = new JPanel();
+		panel6.setBackground(new Color(65, 105, 225));
+		panel6.setBounds(994, 190, 350, 10);
+		contentPane.add(panel6);
+		
+		JPanel panel7 = new JPanel();
+		panel7.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel7.setBackground(new Color(135, 206, 250));
+		panel7.setLayout(null);
+		panel7.setBounds(0, 294, 984, 120);
+		contentPane.add(panel7);
+		
+		JPanel panel8 = new JPanel();
+		panel8.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel8.setBackground(new Color(135, 206, 250));
+		panel8.setLayout(null);
+		panel8.setBounds(994, 200, 350, 214);
+		contentPane.add(panel8);
+		
+		JPanel panel9 = new JPanel();
+		panel9.setBackground(new Color(65, 105, 225));
+		panel9.setBounds(0, 413, 1344, 10);
+		contentPane.add(panel9);
+		
+		JPanel panel10 = new JPanel();
+		panel10.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel10.setBackground(new Color(135, 206, 250));
+		panel10.setLayout(null);
+		panel10.setBounds(0, 423, 1344, 220);
+		contentPane.add(panel10);
+		
+		JPanel panel11 = new JPanel();
+		panel11.setBackground(new Color(65, 105, 225));
+		panel11.setBounds(0, 719, 1344, 10);
+		contentPane.add(panel11);
+		
+		JPanel panel12 = new JPanel();
+		panel12.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel12.setBackground(new Color(135, 206, 250));
+		panel12.setLayout(null);
+		panel12.setBounds(0, 653, 667, 66);
+		contentPane.add(panel12);
+		
+		JPanel panel13 = new JPanel();
+		panel13.setBackground(new Color(65, 105, 225));
+		panel13.setBounds(667, 653, 10, 66);
+		contentPane.add(panel13);
+		
+		JPanel panel14 = new JPanel();
+		panel14.setBorder(new LineBorder(new Color(25, 25, 112), 3));
+		panel14.setBackground(new Color(135, 206, 250));
+		panel14.setLayout(null);
+		panel14.setBounds(677, 653, 667, 66);
+		contentPane.add(panel14);
+		
+		JPanel panel15 = new JPanel();
+		panel15.setBackground(new Color(65, 105, 225));
+		panel15.setBounds(0, 643, 1344, 10);
+		contentPane.add(panel15);
+		
+		JPanel panel16 = new JPanel();
+		panel16.setBackground(new Color(65, 105, 225));
+		panel16.setBounds(984, 74, 10, 340);
+		contentPane.add(panel16);
+		
 		JLabel lblDialogosHabituales = new JLabel("Dialogos Habituales");
 		lblDialogosHabituales.setFont(new Font("Roboto Medium", Font.BOLD, 18));
 		lblDialogosHabituales.setBounds(30, 0, 230, 30);
@@ -193,47 +270,21 @@ public class Main_2 extends JFrame {
 		btnBaniar.setBounds(503, 150, 458, 50);
 		panel3.add(btnBaniar);
 		
-		JPanel panel4 = new JPanel();
-		panel4.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel4.setBackground(new Color(135, 206, 250));
-		panel4.setLayout(null);
-		panel4.setBounds(994, 130, 350, 60);
-		contentPane.add(panel4);
-		
-		JButton btnNewButton = new JButton("Teclado en pantalla");
-		btnNewButton.setBackground(new Color(240, 248, 255));
-		btnNewButton.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnTecladoEnPantalla = new JButton("Teclado en pantalla");
+		btnTecladoEnPantalla.setBackground(new Color(240, 248, 255));
+		btnTecladoEnPantalla.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
+		btnTecladoEnPantalla.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		        try {
 		        	Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");
 		        } catch (IOException e1) {
 		            e1.printStackTrace();
 		        }
-
-
 			}
 		});
-		btnNewButton.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
-		btnNewButton.setBounds(30, 7, 290, 46);
-		panel4.add(btnNewButton);
-		
-		JPanel panel5 = new JPanel();
-		panel5.setBackground(new Color(65, 105, 225));
-		panel5.setBounds(0, 284, 984, 10);
-		contentPane.add(panel5);
-		
-		JPanel panel6 = new JPanel();
-		panel6.setBackground(new Color(65, 105, 225));
-		panel6.setBounds(994, 190, 350, 10);
-		contentPane.add(panel6);
-		
-		JPanel panel7 = new JPanel();
-		panel7.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel7.setBackground(new Color(135, 206, 250));
-		panel7.setLayout(null);
-		panel7.setBounds(0, 294, 984, 120);
-		contentPane.add(panel7);
+		btnTecladoEnPantalla.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
+		btnTecladoEnPantalla.setBounds(30, 7, 290, 46);
+		panel4.add(btnTecladoEnPantalla);
 		
 		JLabel lblRespuestas = new JLabel("Respuestas");
 		lblRespuestas.setFont(new Font("Roboto Medium", Font.BOLD, 18));
@@ -330,13 +381,6 @@ public class Main_2 extends JFrame {
 		btnGracias.setBounds(767, 30, 130, 82);
 		panel7.add(btnGracias);
 		
-		JPanel panel8 = new JPanel();
-		panel8.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel8.setBackground(new Color(135, 206, 250));
-		panel8.setLayout(null);
-		panel8.setBounds(994, 200, 350, 214);
-		contentPane.add(panel8);
-		
 		JLabel lblTemperatura = new JLabel("Temperatura");
 		lblTemperatura.setFont(new Font("Roboto Medium", Font.BOLD, 18));
 		lblTemperatura.setBounds(10, 0, 150, 30);
@@ -413,18 +457,6 @@ public class Main_2 extends JFrame {
 		btnEstaCaliente.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnEstaCaliente.setBounds(175, 120, 160, 80);
 		panel8.add(btnEstaCaliente);
-		
-		JPanel panel9 = new JPanel();
-		panel9.setBackground(new Color(65, 105, 225));
-		panel9.setBounds(0, 413, 1344, 10);
-		contentPane.add(panel9);
-		
-		JPanel panel10 = new JPanel();
-		panel10.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel10.setBackground(new Color(135, 206, 250));
-		panel10.setLayout(null);
-		panel10.setBounds(0, 423, 1344, 220);
-		contentPane.add(panel10);
 		
 		JLabel lblOcio = new JLabel("Ocio");
 		lblOcio.setFont(new Font("Roboto Medium", Font.BOLD, 18));
@@ -649,18 +681,6 @@ public class Main_2 extends JFrame {
 		btnJugar.setBounds(899, 165, 414, 40);
 		panel10.add(btnJugar);
 		
-		JPanel panel11 = new JPanel();
-		panel11.setBackground(new Color(65, 105, 225));
-		panel11.setBounds(0, 719, 1344, 10);
-		contentPane.add(panel11);
-		
-		JPanel panel12 = new JPanel();
-		panel12.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel12.setBackground(new Color(135, 206, 250));
-		panel12.setLayout(null);
-		panel12.setBounds(0, 653, 667, 66);
-		contentPane.add(panel12);
-		
 		JButton btnConfiguracion = new JButton("Configuración");
 		btnConfiguracion.setBackground(new Color(240, 248, 255));
 		btnConfiguracion.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
@@ -675,18 +695,6 @@ public class Main_2 extends JFrame {
 		btnConfiguracion.setBounds(126, 13, 415, 40);
 		panel12.add(btnConfiguracion);
 		
-		JPanel panel13 = new JPanel();
-		panel13.setBackground(new Color(65, 105, 225));
-		panel13.setBounds(667, 653, 10, 66);
-		contentPane.add(panel13);
-		
-		JPanel panel14 = new JPanel();
-		panel14.setBorder(new LineBorder(new Color(25, 25, 112), 3));
-		panel14.setBackground(new Color(135, 206, 250));
-		panel14.setLayout(null);
-		panel14.setBounds(677, 653, 667, 66);
-		contentPane.add(panel14);
-		
 		JButton btnEmergencias = new JButton("Emergencias");
 		btnEmergencias.setBackground(new Color(240, 248, 255));
 		btnEmergencias.setBorder(new LineBorder(new Color(65, 105, 225), 3, true));
@@ -700,15 +708,5 @@ public class Main_2 extends JFrame {
 		btnEmergencias.setFont(new Font("Roboto Medium", Font.PLAIN, 16));
 		btnEmergencias.setBounds(126, 13, 415, 40);
 		panel14.add(btnEmergencias);
-		
-		JPanel panel15 = new JPanel();
-		panel15.setBackground(new Color(65, 105, 225));
-		panel15.setBounds(0, 643, 1344, 10);
-		contentPane.add(panel15);
-		
-		JPanel panel16 = new JPanel();
-		panel16.setBackground(new Color(65, 105, 225));
-		panel16.setBounds(984, 74, 10, 340);
-		contentPane.add(panel16);
 	}
 }

@@ -6,11 +6,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+import java.awt.Color;
+import javax.swing.border.LineBorder;
 
 public class Configuracion extends JFrame {
     
@@ -48,60 +51,109 @@ public class Configuracion extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 626, 443);
-		contentPane.add(panel);
-		panel.setLayout(null);
+		JPanel panel0 = new JPanel();
+		panel0.setBounds(0, 0, 626, 443);
+		contentPane.add(panel0);
+		panel0.setLayout(null);
 		
-		JButton btnVolver = new JButton("Volver");                      //Vuelve al menú principal
-		btnVolver.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
-		btnVolver.setBounds(246, 385, 150, 40);
-		panel.add(btnVolver);
+		JPanel panel1 = new JPanel();
+		panel1.setBackground(new Color(0, 0, 139));
+		panel1.setBounds(0, 0, 182, 73);
+		panel0.add(panel1);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(0, 1, 626, 50);
-		panel.add(panel_1);
-		panel_1.setLayout(null);
+		JPanel panel2 = new JPanel();
+		panel2.setLayout(null);
+		panel2.setForeground(Color.WHITE);
+		panel2.setBorder(null);
+		panel2.setBackground(new Color(0, 0, 139));
+		panel2.setBounds(182, 0, 262, 73);
+		panel0.add(panel2);
+		
+		JLabel lblLogo = new JLabel("");
+		lblLogo.setIcon(new ImageIcon(Main_1.class.getResource("/Images/solidar_logo_reducido_Main_1.png")));
+		lblLogo.setBounds(0, 0, 262, 73);
+		panel2.add(lblLogo);
+		
+		JPanel panel3 = new JPanel();
+		panel3.setBackground(new Color(0, 0, 139));
+		panel3.setBounds(444, 0, 182, 73);
+		panel0.add(panel3);
+		
+		JPanel panel4 = new JPanel();
+		panel4.setBackground(new Color(0, 0, 139));
+		panel4.setBounds(0, 73, 626, 40);
+		panel0.add(panel4);
+		panel4.setLayout(null);
 		
 		JLabel lblTitulo = new JLabel("Configuración");             
+		lblTitulo.setForeground(new Color(240, 248, 255));
 		lblTitulo.setBounds(246, 0, 140, 40);
-		panel_1.add(lblTitulo);
+		panel4.add(lblTitulo);
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitulo.setFont(new Font("Roboto Medium", Font.BOLD, 20));
 		
-		JPanel panel_2 = new JPanel();
-		panel_2.setBounds(0, 50, 10, 393);
-		panel.add(panel_2);
+		JPanel panel5 = new JPanel();
+		panel5.setBackground(new Color(65, 105, 255));
+		panel5.setBounds(0, 113, 10, 330);
+		panel0.add(panel5);
 		
-		JPanel panel_2_1 = new JPanel();
-		panel_2_1.setBounds(616, 50, 10, 393);
-		panel.add(panel_2_1);
+		JPanel panel6 = new JPanel();
+		panel6.setBackground(new Color(65, 105, 255));
+		panel6.setBounds(10, 113, 606, 10);
+		panel0.add(panel6);
 		
-		JPanel panel_1_1 = new JPanel();
-		panel_1_1.setBounds(10, 433, 606, 10);
-		panel.add(panel_1_1);
+		JPanel panel7 = new JPanel();
+		panel7.setBackground(new Color(65, 105, 255));
+		panel7.setBounds(616, 113, 10, 330);
+		panel0.add(panel7);
 		
-		JPanel panel_1_1_1 = new JPanel();
-		panel_1_1_1.setBounds(10, 50, 606, 10);
-		panel.add(panel_1_1_1);
+		JPanel panel8 = new JPanel();
+		panel8.setBackground(new Color(125, 206, 250));
+		panel8.setBorder(new LineBorder(new Color(25, 25, 112), 5));
+		panel8.setBounds(10, 123, 606, 110);
+		panel0.add(panel8);
+		panel8.setLayout(null);
 		
-		JPanel panel_1_1_1_1 = new JPanel();
-		panel_1_1_1_1.setBounds(10, 150, 606, 10);
-		panel.add(panel_1_1_1_1);
+		JPanel panel9 = new JPanel();
+		panel9.setBackground(new Color(65, 105, 255));
+		panel9.setBounds(10, 233, 606, 10);
+		panel0.add(panel9);
+	
+		JPanel panel10 = new JPanel();
+		panel10.setBackground(new Color(125, 206, 250));
+		panel10.setBorder(new LineBorder(new Color(25, 25, 112), 5));
+		panel10.setLayout(null);
+		panel10.setBounds(10, 243, 606, 110);
+		panel0.add(panel10);
 		
-		JPanel panel_3 = new JPanel();
-		panel_3.setBounds(10, 60, 606, 90);
-		panel.add(panel_3);
-		panel_3.setLayout(null);
+		JPanel panel11 = new JPanel();
+		panel11.setBackground(new Color(65, 105, 255));
+		panel11.setBounds(10, 353, 606, 10);
+		panel0.add(panel11);
 		
-		JLabel lblTamanio = new JLabel("Tamaño");
-		lblTamanio.setBounds(5, 25, 80, 40);
-		panel_3.add(lblTamanio);
+		JPanel panel12 = new JPanel();
+		panel12.setBackground(new Color(125, 206, 250));
+		panel12.setBorder(new LineBorder(new Color(25, 25, 112), 5));
+		panel12.setBounds(10, 363, 606, 70);
+		panel0.add(panel12);
+		panel12.setLayout(null);
+		
+		JPanel panel13 = new JPanel();
+		panel13.setBackground(new Color(65, 105, 255));
+		panel13.setBounds(10, 433, 606, 10);
+		panel0.add(panel13);
+		
+		JLabel lblTamanio = new JLabel("Resolución");
+		lblTamanio.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTamanio.setBounds(197, 0, 212, 30);
+		panel8.add(lblTamanio);
 		lblTamanio.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
 		JButton btnTamanio1 = new JButton("800 x 600");           //Botón que selecciona el primer tamaño (800 x 600)
-		btnTamanio1.setBounds(90, 25, 150, 40);
-		panel_3.add(btnTamanio1);
+		btnTamanio1.setBackground(new Color(240, 248, 255));
+		btnTamanio1.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
+		btnTamanio1.setBounds(41, 37, 150, 40);
+		panel8.add(btnTamanio1);
 		btnTamanio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "1";                                                  //Coloca la variable tamanio como "1"
@@ -111,8 +163,10 @@ public class Configuracion extends JFrame {
 		btnTamanio1.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
 		JButton btnTamanio2 = new JButton("1280 x 960");        //Botón que selecciona el segundo tamaño (1280 x 960)
-		btnTamanio2.setBounds(250, 25, 150, 40);
-		panel_3.add(btnTamanio2);
+		btnTamanio2.setBackground(new Color(240, 248, 255));
+		btnTamanio2.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
+		btnTamanio2.setBounds(219, 37, 150, 40);
+		panel8.add(btnTamanio2);
 		btnTamanio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "2";                                                  //Coloca la variable tamanio como "2"
@@ -122,8 +176,10 @@ public class Configuracion extends JFrame {
 		btnTamanio2.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
 		JButton btnTamanio3 = new JButton("1920 x 1080");        //Botón que selecciona el tercer tamaño (1920 x 1080)
-		btnTamanio3.setBounds(410, 25, 150, 40);
-		panel_3.add(btnTamanio3);
+		btnTamanio3.setBackground(new Color(240, 248, 255));
+		btnTamanio3.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
+		btnTamanio3.setBounds(406, 37, 150, 40);
+		panel8.add(btnTamanio3);
 		btnTamanio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tamanio = "3";                                                       //Coloca la variable tamanio como "3"
@@ -132,27 +188,28 @@ public class Configuracion extends JFrame {
 		});
 		btnTamanio3.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
 		
-		JLabel lblNewLabel = new JLabel("16:9");
-		lblNewLabel.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
-		lblNewLabel.setBounds(283, 1, 40, 24);
-		panel_3.add(lblNewLabel);
+		JLabel lblRes = new JLabel("16:9");
+		lblRes.setHorizontalAlignment(SwingConstants.CENTER);
+		lblRes.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		lblRes.setBounds(3, 37, 38, 40);
+		panel8.add(lblRes);
 		
 		lblTamanioSeleccionado = new JLabel("Seleccionado: 800 x 600");
+		lblTamanioSeleccionado.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTamanioSeleccionado.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		lblTamanioSeleccionado.setBounds(228, 73, 216, 17);
-		panel_3.add(lblTamanioSeleccionado);
+		lblTamanioSeleccionado.setBounds(197, 80, 212, 30);
+		panel8.add(lblTamanioSeleccionado);
 		
-		JPanel panel_3_1 = new JPanel();
-		panel_3_1.setLayout(null);
-		panel_3_1.setBounds(10, 160, 606, 90);
-		panel.add(panel_3_1);
 		
 		JLabel lblIdioma = new JLabel("Idioma");
+		lblIdioma.setHorizontalAlignment(SwingConstants.CENTER);
 		lblIdioma.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
-		lblIdioma.setBounds(5, 25, 80, 40);
-		panel_3_1.add(lblIdioma);
+		lblIdioma.setBounds(197, 0, 212, 40);
+		panel10.add(lblIdioma);
 		
 		JButton btnEspaniol = new JButton("Español");                //Botón que selecciona el idioma español
+		btnEspaniol.setBackground(new Color(240, 248, 255));
+		btnEspaniol.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
 		btnEspaniol.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				idioma = "esp";                                            //Cambia la variable idioma a "esp"
@@ -160,10 +217,12 @@ public class Configuracion extends JFrame {
 			}
 		});
 		btnEspaniol.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
-		btnEspaniol.setBounds(90, 25, 150, 40);
-		panel_3_1.add(btnEspaniol);
+		btnEspaniol.setBounds(102, 36, 150, 40);
+		panel10.add(btnEspaniol);
 		
 		JButton btnIngles = new JButton("Ingles");                 //Botón que selecciona el idioma inglés
+		btnIngles.setBackground(new Color(240, 248, 255));
+		btnIngles.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
 		btnIngles.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				idioma = "ing";                                           //Cambia la variable idioma a "ing"
@@ -171,17 +230,24 @@ public class Configuracion extends JFrame {
 			}
 		});
 		btnIngles.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
-		btnIngles.setBounds(250, 25, 150, 40);
-		panel_3_1.add(btnIngles);
+		btnIngles.setBounds(354, 36, 150, 40);
+		panel10.add(btnIngles);
 		
-		 lblIdiomaSeleccionado = new JLabel("Seleccionado: Español");
-		 lblIdiomaSeleccionado.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
-		lblIdiomaSeleccionado.setBounds(410, 39, 186, 17);
-		panel_3_1.add(lblIdiomaSeleccionado);
+		lblIdiomaSeleccionado = new JLabel("Seleccionado: Español");
+		lblIdiomaSeleccionado.setHorizontalAlignment(SwingConstants.CENTER);
+		lblIdiomaSeleccionado.setFont(new Font("Roboto Medium", Font.PLAIN, 14));
+		lblIdiomaSeleccionado.setBounds(197, 80, 212, 30);
+		panel10.add(lblIdiomaSeleccionado);
 		
-		JPanel panel_1_1_1_1_1 = new JPanel();
-		panel_1_1_1_1_1.setBounds(10, 250, 606, 10);
-		panel.add(panel_1_1_1_1_1);
+		JButton btnVolver = new JButton("Volver");
+		btnVolver.setBackground(new Color(240, 248, 255));
+		btnVolver.setBorder(new LineBorder(new Color(65, 105, 255), 5, true));
+		btnVolver.setBounds(197, 15, 212, 40);
+		panel12.add(btnVolver);
+		btnVolver.setFont(new Font("Roboto Medium", Font.PLAIN, 20));
+		
+		
+		
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
